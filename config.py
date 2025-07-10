@@ -6,6 +6,7 @@ from dataclasses import dataclass
 class SolanaConfig:
     # API Keys
     MORALIS_API_KEY: str = os.getenv("MORALIS_API_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImZhOTBhMmIxLTEyOGUtNGZkMS05NjMzLTFlOGFhODhkYTBlMCIsIm9yZ0lkIjoiNDUzNTA2IiwidXNlcklkIjoiNDY2NTk1IiwidHlwZUlkIjoiN2JlMDE3Y2EtZDk5Yy00YjMyLWJjOTEtMDhiYWUyNmUzZTNhIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3NDk3MDM2NzksImV4cCI6NDkwNTQ2MzY3OX0.01A0xGL-upQUDtu37GrsO1_jEMJ9c2rpGgBOM628fDA")
+    HELIUS_API_KEY: str = os.getenv("HELIUS_API_KEY", "3c8ff817-9626-49e1-bd1a-2dc86f5f005e")
     TG_BOT_TOKEN: str = os.getenv("TG_BOT_TOKEN", "7068725354:AAGkDVanKkglVoXIcZofDeQLKCfhxve275g")
     
     # Telegram Configuration

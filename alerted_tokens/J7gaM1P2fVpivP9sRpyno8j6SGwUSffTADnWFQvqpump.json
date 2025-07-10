@@ -3,19 +3,15 @@
   "pool_address": "BsHmncrQpCPmukXeFidhhaTc5mSSEnTAYua8tME79ALP",
   "name": "ASSLANA",
   "symbol": "ASSLANA",
-  "timestamp_alerted": 1752177991,
+  "timestamp_alerted": 1752182379,
   "top_holders": [
     {
       "address": "BsHmncrQpCPmukXeFidhhaTc5mSSEnTAYua8tME79ALP",
-      "balance": 100901838.032569
+      "balance": 129192068.297794
     },
     {
       "address": "6QNjHHhC8G8PEEugaEr3s6YYXjLCougzkwMLa9oEJmL1",
       "balance": 71638335.720087
-    },
-    {
-      "address": "9bQB3PXs5CkpCECjYoDQkuzy1sMzyTDj39vtZsV4pZ9g",
-      "balance": 63515321.752907
     },
     {
       "address": "8tws4nN5EwUauvLoWfEi6ceCp1xHqVXPcUj3s8JgaXkS",
@@ -24,6 +20,10 @@
     {
       "address": "A9C7REWgZMFvz8t4LfUYEeSSTSvF5zemcEGJL8d32KnD",
       "balance": 40389706.476637
+    },
+    {
+      "address": "9bQB3PXs5CkpCECjYoDQkuzy1sMzyTDj39vtZsV4pZ9g",
+      "balance": 38884875.486852
     }
   ]
 }

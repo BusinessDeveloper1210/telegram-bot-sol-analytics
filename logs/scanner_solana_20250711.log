@@ -1,379 +1,312 @@
-2025-07-11 04:02:24,451 - scanner_solana - INFO - Started
-2025-07-11 04:02:25,877 - scanner_solana - INFO - Token BYXGmbZttWDnLDzXzg6BFGeAbvw3hMsRUHhVYTxkpump doesn't meet mcap range: 53543.0
-2025-07-11 04:02:25,878 - scanner_solana - INFO - Token 8tRH3ZVCsvD5jwpassphR4aPoNvrNRAaYeAfCmCWpump doesn't meet min liquidity: 6118.677096704
-2025-07-11 04:02:25,878 - scanner_solana - INFO - Token EG1kt8w94kQK9mdfqQSyftzaSLfMEPv4m9rANDY16zGb doesn't meet mcap range: 8097.0
-2025-07-11 04:02:25,878 - scanner_solana - INFO - Token G4aKCDWemLrH959qwjpZbLQm1aGB7FtRjvm3Toczpump doesn't meet min liquidity: 6838.56480426
-2025-07-11 04:02:25,878 - scanner_solana - INFO - Token 53xcfdymvYmrx9BY47MUFumBGwdVCTgyywbNaL2Upump doesn't meet min liquidity: 6128.926307872
-2025-07-11 04:02:25,879 - scanner_solana - INFO - Token 8BojTbbG2nnTXA1WgpHxoKdqdoa3AAnDvzqynHZdpump doesn't meet mcap range: 94877.9998224991
-2025-07-11 04:02:25,879 - scanner_solana - INFO - Token E2AfuDaaBoi8WU3RMP6Lz9WRAqqU8qGnDg7NPFNFpump doesn't meet mcap range: 22865.986521351366
-2025-07-11 04:02:25,879 - scanner_solana - INFO - Token Gt7Y89SB9rnieLbgi588rRGnSTK5MVawi9J7nXK7pump doesn't meet min liquidity: 6328.887740148
-2025-07-11 04:02:25,879 - scanner_solana - INFO - Token nL43agfrgjMUYXRosM2Lmjxns4W41at9uVTKAeCpump doesn't meet mcap range: 10890.97042120253
-2025-07-11 04:02:25,880 - scanner_solana - INFO - Token DCUUQDK5DsaMqVNdF2vXnE3owzvfuoLvd4cvW8aTpump doesn't meet mcap range: 51023.99964300819
-2025-07-11 04:02:27,118 - scanner_solana - INFO - Top 5 holders holding for token 47MVfEo7trABaSkmLjSJFJN3YcZsxCPvKc9EZ2eepump above threshold, top 5: 98.45 %
-2025-07-11 04:02:35,689 - scanner_solana - INFO - Sending alert for token: J7gaM1P2fVpivP9sRpyno8j6SGwUSffTADnWFQvqpump
-2025-07-11 04:02:44,050 - scanner_solana - INFO - Token HMn9Vj8PgJyqJhFNFW8NrrXJPkiLiTdbqcH1VxMhpump doesn't meet mcap range: 47660.0
-2025-07-11 04:02:44,050 - scanner_solana - INFO - Token GDT8vmX4ccCaaCSBMzX49ErEwHwAXh9ke1VL8oPXpump doesn't meet mcap range: 16189.04103374219
-2025-07-11 04:02:44,050 - scanner_solana - INFO - Token 225EGYN5zqdRfcghS38c4WgVoZ5TArMtYFGK5Pvupump doesn't meet min liquidity: 8993.4729121
-2025-07-11 04:02:44,051 - scanner_solana - INFO - Token 5314GTpDziP2ZdaANnt5KJEABGXy5Nn5Kyc3SFPYpump doesn't meet mcap range: 39134.99862832995
-2025-07-11 04:02:44,051 - scanner_solana - INFO - Token AnoFE93NRBEe7vjABrjhX4BdcJLSdW8yCVwxRsQMpump doesn't meet min liquidity: 6048.524513902
-2025-07-11 04:02:52,963 - scanner_solana - INFO - Sending alert for token: 4RYtJLcaGKMkYbodJ7X8QYPd2SnRWRvSVWMxfzwRpump
-2025-07-11 04:02:58,843 - scanner_solana - INFO - Token 5BX8HNTgX44x4XVNFhCciE1gwsj6QFzsyGYVk5fspump doesn't meet min liquidity: 6063.88128361
-2025-07-11 04:02:58,844 - scanner_solana - INFO - Token 5dB7cVw5p52D15iZFsAEEeGoNq4oXcoR7vAkZFoMpump doesn't meet min liquidity: 7363.082383714
-2025-07-11 04:02:58,845 - scanner_solana - INFO - Token 2CiaDVgaeGS5ZGmh2sSLXZ4vgEbGYqxVoTsntk1tpump doesn't meet min liquidity: 6216.416420308
-2025-07-11 04:02:58,845 - scanner_solana - INFO - Token DwdBHDgqMJ41zni5nmhZQyjemCcg3NfGG5AXxoympump doesn't meet min liquidity: 6238.279963596
-2025-07-11 04:02:58,846 - scanner_solana - INFO - Token BvjSqDgy4phH7M3UoPnf4wfFAdmd2eVjzJtLi59q4UZj doesn't meet min liquidity: 6540.607216848
-2025-07-11 04:02:58,847 - scanner_solana - INFO - Token BJHtSnQ1y6DWrWSU4Y13m1iehDdd6EL1avGPWF1mSmBF doesn't meet min liquidity: 9846.782540116
-2025-07-11 04:02:58,847 - scanner_solana - INFO - Token BD7f5nfvdsy2pD2ftesCDySodeRG9RFJRVe4B6dpump doesn't meet min liquidity: 6515.172476382
-2025-07-11 04:02:58,848 - scanner_solana - INFO - Token oDkFUAugmGkq3DsyPxUp8ZM1w6tMAV2AkAG9qr9pump doesn't meet min liquidity: 6430.94303328
-2025-07-11 04:02:58,848 - scanner_solana - INFO - Token kK2KD9G4UDxzDZfuMBUhtkgJcYC2d5yZRpZ4jvXpump doesn't meet mcap range: 71282.0
-2025-07-11 04:02:58,849 - scanner_solana - INFO - Token Ftd6oceFVpHjLp2oSqLUGgsptW54io8PEqxJs2tZpump doesn't meet min liquidity: 7849.867280638
-2025-07-11 04:02:59,854 - scanner_solana - INFO - Top 5 holders holding for token GNYg2tXANTteRH4jjkn33AXnDHonDt9738L7M4oomKcM above threshold, top 5: 99.97999999999999 %
-2025-07-11 04:02:59,855 - scanner_solana - INFO - Token J4UgvF1kNbZjssk8pMoXVERP2CmGfr8NDwRecmuwpump doesn't meet mcap range: 22162.643221406277
-2025-07-11 04:02:59,855 - scanner_solana - INFO - Token iW4wRMguGFEgJ1ojDk2AnVMho7kWEwkCAAkwqB7pump doesn't meet min liquidity: 6484.26555749
-2025-07-11 04:02:59,856 - scanner_solana - INFO - Token Cch4x5gDRHVBDMoA93zddJWRioj3YgBFCmdae9rpump doesn't meet min liquidity: 6224.572411242
-2025-07-11 04:02:59,856 - scanner_solana - INFO - Token FfHQeCRsbPd7nhrCtnmkpeSMQ36TrsZx8uvhgSGypump doesn't meet min liquidity: 6404.818945938
-2025-07-11 04:02:59,857 - scanner_solana - INFO - Token ACXHEXvwWvP6j7Gw6rhCfBaF42vftaETRBRedHiWpump doesn't meet min liquidity: 6348.198341162
-2025-07-11 04:03:04,492 - scanner_solana - INFO - Token's Bc27BPokmhAjhsHKGuP2Lf8qhEaTRmcvc5JQF7phpump txs does not meet the outlier requirement: (outlier 92.47), (th 6256.11)
-2025-07-11 04:03:04,493 - scanner_solana - INFO - Token FveeaNqaQDE49pPxpqAoXGwgo3gcRaVVXwcsbzbppump doesn't meet min liquidity: 6061.647112042
-2025-07-11 04:03:04,493 - scanner_solana - INFO - Token xJ6bxfHRQ64UMDnsLW94SLGeAiZcwdNw5xUma3dpump doesn't meet min liquidity: 6992.582061534
-2025-07-11 04:03:04,493 - scanner_solana - INFO - Token KsXP5KzmjqvF9SPHiuxFN9nstGusDazjyYuefzdpump doesn't meet min liquidity: 6860.3183917
-2025-07-11 04:03:04,493 - scanner_solana - INFO - Token B7GcEGiJqUXKDCgnSdud97nMHSeBdspXMm5x3jQFpump doesn't meet min liquidity: 6154.369006826
-2025-07-11 04:03:04,493 - scanner_solana - INFO - Token FJbd6MBQ2su4DEQJVygvuTrFKZTaZHqkwJ4gnsSVRhfV doesn't meet mcap range: 71881.0
-2025-07-11 04:03:04,494 - scanner_solana - INFO - Token Ar8FNn4xzrRZnxyi1uTsMCik9rete5UiU18g2B8apump doesn't meet min liquidity: 9099.56516925
-2025-07-11 04:03:04,494 - scanner_solana - INFO - Token tg6hdq1pbX6HEo3bV8FcZH4cD9aKd8wxr1bWYmMVpxa doesn't meet min liquidity: 8887.806520458
-2025-07-11 04:03:04,494 - scanner_solana - INFO - Token neE7KXNcefaXNTK7vpGkJbzRW5YdnXHiD3Rni9Tpump doesn't meet min liquidity: 6134.571108054
-2025-07-11 04:03:04,494 - scanner_solana - INFO - Token 3Ddsfk7fjaFrBSt6ep6cTjbAN5nL1N76mdMVFaxfpump doesn't meet min liquidity: 6316.72746661
-2025-07-11 04:03:04,494 - scanner_solana - INFO - Token GQcXy1ZWiV2QwVZsqjECRX1fNxwxRZXz75jBw6wBpump doesn't meet min liquidity: 7962.607030134
-2025-07-11 04:03:04,494 - scanner_solana - INFO - Token DWSynLhYF9cvNUXMbSw3SS42XssFpKWrQ5nNqbgpump doesn't meet mcap range: 19338.125620166782
-2025-07-11 04:03:04,495 - scanner_solana - INFO - Token BfwUnVwNo6tzyLbZinUoPzzfc6hrPfSojaQXDscgpump doesn't meet min liquidity: 6068.24815557
-2025-07-11 04:03:04,495 - scanner_solana - INFO - Token BrKvsoy1VhMxgtiHYryhRjWuwmQ5uPesFfVPbnTXpump doesn't meet min liquidity: 7737.819098314
-2025-07-11 04:03:04,495 - scanner_solana - INFO - Token 4yYAswLCWWKQBEojvGNvXwRTCnUjYKEqogmE6Dkypump doesn't meet mcap range: 54407.473679268216
-2025-07-11 04:03:04,495 - scanner_solana - INFO - Token 21vNH7mrgowisrva7UvtCn1VhHVm4EgfsSzYvQxnf9Nh doesn't meet min liquidity: 8832.763134164
-2025-07-11 04:03:04,495 - scanner_solana - INFO - Token 3ret9iwvxpxTJBEzeNe2LDtcBTPeFr51ihwN89CYpump doesn't meet min liquidity: 6211.817153674
-2025-07-11 04:03:04,495 - scanner_solana - INFO - Token 4MqX6pVyWLqUaeNYSqEYe47xWkardCFy2JX6SUynpump doesn't meet min liquidity: 9704.632892156
-2025-07-11 04:03:04,496 - scanner_solana - INFO - Token Dp68rtmwnvNBDfPLf5zEobGCmD1aBNDQAQuLQtTNenEc doesn't meet mcap range: 9849.501452097282
-2025-07-11 04:03:04,496 - scanner_solana - INFO - Token CTGvWcBAf42ktXtrLC4CZxA4GpjjtfTYzpePqbDupump doesn't meet mcap range: 13272.278545347868
-2025-07-11 04:03:04,496 - scanner_solana - INFO - Token Ek3ts4r6kGC7VmFBVimFEz7CqyRZGpxcbwXs57YDYLoH doesn't meet min liquidity: 9505.592276356
-2025-07-11 04:03:04,496 - scanner_solana - INFO - Token DLzpWkuFooYM7nfNXDC74bQAjJc1vjVkHCa6zQympump doesn't meet min liquidity: 9875.934754952
-2025-07-11 04:03:04,496 - scanner_solana - INFO - Token 759rtBFtUWuMBy9yfeC7BMhkdt2KXrobRsSwAHwFpump doesn't meet min liquidity: 6245.995965386
-2025-07-11 04:03:04,496 - scanner_solana - INFO - Token 9Acwovebjxq5tft4ftCMSMq3hPNsrfrKMbpyGE55pump doesn't meet min liquidity: 9418.173475234
-2025-07-11 04:03:04,496 - scanner_solana - INFO - Token GtWKJcH75AGpck21TqfkWcgGCVGhsVd96hcNVKmpump doesn't meet min liquidity: 6819.777623642
-2025-07-11 04:03:04,497 - scanner_solana - INFO - Token 6yz2qmuz4FxA9Prya7zi97yGLVZnujWLSipLnQE9pump doesn't meet mcap range: 17211.860035248712
-2025-07-11 04:03:04,497 - scanner_solana - INFO - Token 7VpwdHd2JRwTavc6hHgpVuq5Bt5tWwQGi6de1xWgpump doesn't meet min liquidity: 7909.298429636
-2025-07-11 04:03:04,497 - scanner_solana - INFO - Token HdDufc35eZJHS5KWM7Ay5popqnAZLLMjQkr2h6XSpump doesn't meet min liquidity: 6486.474838606
-2025-07-11 04:03:04,497 - scanner_solana - INFO - Token 9EduKyUipen1tWG3JWGedbYLcVXf9e1qGMKEbhYzpump doesn't meet min liquidity: 6274.170552128
-2025-07-11 04:03:04,497 - scanner_solana - INFO - Token j8fVf6jsTeybjwDe3NcaVFtq4SPKxQyjnbqQc3ypump doesn't meet min liquidity: 6136.96830309
-2025-07-11 04:03:04,497 - scanner_solana - INFO - Token EQEPiWvGfL6w3ZwuaTU636K53GuJQEvXqfG4D8jXpump doesn't meet min liquidity: 5998.20207309
-2025-07-11 04:03:04,497 - scanner_solana - INFO - Token 5UxrcMyQrFdGgGKspEVsToJA8BAqKiWX1iALYbappump doesn't meet mcap range: 6762.006638372218
-2025-07-11 04:03:04,497 - scanner_solana - INFO - Token 7d7Y5F6N784qoRaEzEj48n184zQ4cczjz3LSSNCigqgv doesn't meet min liquidity: 6979.08600349
-2025-07-11 04:03:04,497 - scanner_solana - INFO - Token APbeRSWUaGpKaVjoQC8ABA41NnSwUHC3yXoZa4FCpump doesn't meet min liquidity: 6691.380108522
-2025-07-11 04:03:04,498 - scanner_solana - INFO - Token GDMPoujJaLL98VocJS6gDKpqeoGidohs2kAyM8Axpump doesn't meet min liquidity: 5939.900470562
-2025-07-11 04:03:04,498 - scanner_solana - INFO - Token 5q7pZ1ZFNJEGmrhp3nXeA7XYdWpUEP1rVx2tYNMhpump doesn't meet min liquidity: 7377.061008462
-2025-07-11 04:03:09,526 - scanner_solana - INFO - Token's EBP48qyGbZqDUjSEsNG6HoAYfL38cC4XekekVMQFpump txs does not meet the outlier requirement: (outlier 4672.54), (th 26227.28)
-2025-07-11 04:03:09,527 - scanner_solana - INFO - Token 72XcLnHNmce5Av4asjtChUcYDbvp23aaGYwJUdscpump doesn't meet mcap range: 11300.714934010308
-2025-07-11 04:03:09,528 - scanner_solana - INFO - Token 23zLMzazuQY2wB9uhmHxYCbA9NAh2Z63Q6eZMnrppump doesn't meet mcap range: 36826.539203610904
-2025-07-11 04:03:14,191 - scanner_solana - INFO - Token's 58UsJYGCSKJi68aQe27FTq2zQixwprBt2nAvF9Fppump txs does not meet the outlier requirement: (outlier 2311.32), (th 139837.16)
-2025-07-11 04:03:14,192 - scanner_solana - INFO - Token 3Je8LpdJFCqm59QiqC9fnki4ze1e435jVeVZCr1rpump doesn't meet min liquidity: 6443.693768166
-2025-07-11 04:03:18,593 - scanner_solana - INFO - Token's 225wNcgj6QJamuRBLqTN9usLrfD2YuK1LTFwENHMpump txs does not meet the outlier requirement: (outlier 44467.96), (th 84477.51)
-2025-07-11 04:03:18,594 - scanner_solana - INFO - Token 34Vz77ZqibwUSg6ifmNb1VdkdMm4JPLGYTZKiTw6pump doesn't meet min liquidity: 6498.867866428
-2025-07-11 04:03:18,595 - scanner_solana - INFO - Token PRaTqUZSTcy1BpVLTug4HNhUj4KUrrzqSTKP5h8pump doesn't meet min liquidity: 6754.96048989
-2025-07-11 04:03:18,596 - scanner_solana - INFO - Token FA8zzXiVfav2nfunCLiquqZZeqpBM1WcEngXXvHGpump doesn't meet min liquidity: 9427.224221752
-2025-07-11 04:03:18,597 - scanner_solana - INFO - Token E5jzAjujUR5WHS9gpMsKqMaoqDSKVVT1b1SKFKf3pump doesn't meet mcap range: 9601.99999999999
-2025-07-11 04:03:18,597 - scanner_solana - INFO - Token 9BMzdbmotK41M6mU48V9y52WytqLaruF61UCa3fkpump doesn't meet mcap range: 13783.984897476925
-2025-07-11 04:03:18,598 - scanner_solana - INFO - Token U22PVeV2XputjUBnDWPKu1B5YMFgws8GFt3Lh3qpump doesn't meet mcap range: 8054.8157908840285
-2025-07-11 04:03:18,599 - scanner_solana - INFO - Token uCtD3z3tDKrLHfEFmME46wkouyBgxi2UcAa8yJapump doesn't meet min liquidity: 6944.830870324
-2025-07-11 04:03:22,393 - scanner_solana - INFO - Token's EDPNErd8VomUD3AhhGaS15vq4mP58k56bKm35puBpump txs does not meet the outlier requirement: (outlier 3830.96), (th 22105.68)
-2025-07-11 04:03:22,394 - scanner_solana - INFO - Token UkKJAASGv52mmqborS2UHTnFLuaycYkNjHjoE9Vpump doesn't meet min liquidity: 6573.61596533
-2025-07-11 04:03:22,394 - scanner_solana - INFO - Token 9Xs4gN911d6DL1a6pn3pCHLPwF1JXaqewwar9PE9pump doesn't meet min liquidity: 6059.038038556
-2025-07-11 04:03:22,395 - scanner_solana - INFO - Token EuzAMWKacwppDJTVtzraGU8efLoGL8SYUi5R3appump doesn't meet min liquidity: 6217.2354454
-2025-07-11 04:03:22,395 - scanner_solana - INFO - Token 8CSp3d7w5Jj2EVfdFuKcunUCaorbyzGMAgJS5ew3pump doesn't meet min liquidity: 6054.370269394
-2025-07-11 04:03:22,396 - scanner_solana - INFO - Token 2arhmBCQssheGSLPY2b9QZawvJZTgDf8yASXuuXhpump doesn't meet min liquidity: 6854.194817968
-2025-07-11 04:03:22,396 - scanner_solana - INFO - Token 4Xph2k5J3yfyiLKgkAT8MnW2auwp2eS39RfNuyc7pump doesn't meet min liquidity: 6272.286412568
-2025-07-11 04:03:22,397 - scanner_solana - INFO - Token 5j4jMGjQq4uvoqSctSccQaN7sJR4pCnhDTbvsT56pump doesn't meet min liquidity: 6235.28261787
-2025-07-11 04:03:22,398 - scanner_solana - INFO - Token AUiWb6CwSknm43EpNEeVh4vzJCsSHvTcA1sJGZT8CSEk doesn't meet min liquidity: 6239.275015424
-2025-07-11 04:03:22,398 - scanner_solana - INFO - Token HXc72LshusSjr5mMEn9v6V3VspTGKZYZmG4BSWojpump doesn't meet mcap range: 15818.782730368996
-2025-07-11 04:03:22,399 - scanner_solana - INFO - Token FhNE1vvH4GqJ5GFmw7ZFprsUmzcgdbRYzcuvwzJ6pump doesn't meet mcap range: 17280.132867925553
-2025-07-11 04:03:22,399 - scanner_solana - INFO - Token FTeLTnjC2U6TVKcmHHqjxtD3FugNhkqzMdn5bzcdpump doesn't meet min liquidity: 8310.066495476
-2025-07-11 04:03:22,400 - scanner_solana - INFO - Token GTE7Yb3sNWHFArFu61jEx7mBpSRZrh3DUqi2JGGSpump doesn't meet min liquidity: 6051.64068131
-2025-07-11 04:03:22,401 - scanner_solana - INFO - Token FxbBxPmqBCkiVcjeXHXohGFx49R6ewSVScJxTpjtpump doesn't meet min liquidity: 8800.98835025
-2025-07-11 04:03:22,401 - scanner_solana - INFO - Token DEGdc41SguhEtVRbbVLai19WKqEAHGcFptQwCyA7pump doesn't meet min liquidity: 7612.925740658
-2025-07-11 04:03:22,402 - scanner_solana - INFO - Token 9aqrniLEVQb76W9yWpH3tv2gXrtBU3dMZszECYJppump doesn't meet min liquidity: 6137.727466628
-2025-07-11 04:03:27,227 - scanner_solana - INFO - Token's cDkTvtXwJLqAS5NqpiwoTT2cbe6GkPBfBwkb5kppump txs does not meet the outlier requirement: (outlier 134178.73), (th 1051634.73)
-2025-07-11 04:03:27,230 - scanner_solana - ERROR - Ran into the following error while executing scan: keys must be str, int, float, bool or None, not HandlePoolResponse
-2025-07-11 04:03:27,231 - scanner_solana - ERROR - Exception: keys must be str, int, float, bool or None, not HandlePoolResponse
-2025-07-11 04:03:27,262 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
-  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 357, in run
-    utils.save_json(
-    ~~~~~~~~~~~~~~~^
-        scan_report,
-        ^^^^^^^^^^^^
-    ...<3 lines>...
-        ),
-        ^^
-    )
+2025-07-11 04:31:14,032 - scanner_solana - INFO - Fetched Helius data for token: DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump
+2025-07-11 04:31:14,032 - scanner_solana - INFO - Sending enhanced alert for token: DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump
+2025-07-11 04:31:18,664 - scanner_solana - INFO - Token BYXGmbZttWDnLDzXzg6BFGeAbvw3hMsRUHhVYTxkpump doesn't meet mcap range: 18765.0
+2025-07-11 04:31:18,665 - scanner_solana - INFO - Token 8tRH3ZVCsvD5jwpassphR4aPoNvrNRAaYeAfCmCWpump doesn't meet min liquidity: 6613.931487664
+2025-07-11 04:31:18,665 - scanner_solana - INFO - Token EG1kt8w94kQK9mdfqQSyftzaSLfMEPv4m9rANDY16zGb doesn't meet min liquidity: 9231.383879256
+2025-07-11 04:31:18,666 - scanner_solana - INFO - Token G4aKCDWemLrH959qwjpZbLQm1aGB7FtRjvm3Toczpump doesn't meet min liquidity: 7238.580167616
+2025-07-11 04:31:18,667 - scanner_solana - INFO - Token 53xcfdymvYmrx9BY47MUFumBGwdVCTgyywbNaL2Upump doesn't meet min liquidity: 6386.023636292
+2025-07-11 04:31:18,668 - scanner_solana - INFO - Token 8BojTbbG2nnTXA1WgpHxoKdqdoa3AAnDvzqynHZdpump doesn't meet mcap range: 75761.9998582365
+2025-07-11 04:31:18,669 - scanner_solana - INFO - Token E2AfuDaaBoi8WU3RMP6Lz9WRAqqU8qGnDg7NPFNFpump doesn't meet mcap range: 16819.988421539296
+2025-07-11 04:31:18,670 - scanner_solana - INFO - Token Gt7Y89SB9rnieLbgi588rRGnSTK5MVawi9J7nXK7pump doesn't meet min liquidity: 6054.654180026
+2025-07-11 04:31:18,671 - scanner_solana - INFO - Token nL43agfrgjMUYXRosM2Lmjxns4W41at9uVTKAeCpump doesn't meet min liquidity: 9027.810965282
+2025-07-11 04:31:18,671 - scanner_solana - INFO - Token DCUUQDK5DsaMqVNdF2vXnE3owzvfuoLvd4cvW8aTpump doesn't meet mcap range: 65646.99954069768
+2025-07-11 04:31:20,564 - scanner_solana - INFO - Top 5 holders holding for token 47MVfEo7trABaSkmLjSJFJN3YcZsxCPvKc9EZ2eepump above threshold, top 5: 98.21 %
+2025-07-11 04:36:45,285 - scanner_solana - INFO - Started
+2025-07-11 04:36:47,463 - scanner_solana - INFO - Token BrcGXDfWm3GftW1mg77itPUS5ChRpWGNoPPnBRPKpump doesn't meet min liquidity: 6455.214298672
+2025-07-11 04:36:47,464 - scanner_solana - INFO - Token 9BUfG1hyiUAHShynZcqxWRhhdeL8jTq4PidLTMD7pump doesn't meet min liquidity: 7166.329831484
+2025-07-11 04:37:54,836 - scanner_solana - ERROR - Failed to handle token of interest GqXsuvY2vBBC1ZfwDKyvhzJjA3SbCSWGYAUY6WoGpump due to 404 Client Error: Not Found for url: https://solana-gateway.moralis.io/token/mainnet/GqXsuvY2vBBC1ZfwDKyvhzJjA3SbCSWGYAUY6WoGpump/top-holders?limit=10
+2025-07-11 04:37:54,837 - scanner_solana - ERROR - Exception: 404 Client Error: Not Found for url: https://solana-gateway.moralis.io/token/mainnet/GqXsuvY2vBBC1ZfwDKyvhzJjA3SbCSWGYAUY6WoGpump/top-holders?limit=10
+2025-07-11 04:37:54,919 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 90, in _handle_token_of_interest
+    top_token_holders = self.moralis.get_top_token_holders(token_address, limit=10)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\dex_scanner\external_clients.py", line 175, in get_top_token_holders
+    return self._get(
+           ~~~~~~~~~^
+        f"{self.BASE_URL}/token/{self.NETWORK}/{token_address}/top-holders",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        {"limit": limit},
+        ^^^^^^^^^^^^^^^^^
+    )["result"]
     ^
-  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\utils.py", line 38, in save_json
-    json.dump(data, f, indent=2)
-    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Best-luckyGuy\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 179, in dump
-    for chunk in iterable:
-                 ^^^^^^^^
-  File "C:\Users\Best-luckyGuy\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 433, in _iterencode
-    yield from _iterencode_dict(o, _current_indent_level)
-  File "C:\Users\Best-luckyGuy\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 376, in _iterencode_dict
-    raise TypeError(f'keys must be str, int, float, bool or None, '
-                    f'not {key.__class__.__name__}')
-TypeError: keys must be str, int, float, bool or None, not HandlePoolResponse
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\dex_scanner\external_clients.py", line 162, in _get
+    raise e
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\dex_scanner\external_clients.py", line 157, in _get
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Best-luckyGuy\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://solana-gateway.moralis.io/token/mainnet/GqXsuvY2vBBC1ZfwDKyvhzJjA3SbCSWGYAUY6WoGpump/top-holders?limit=10
 
-2025-07-11 04:04:28,943 - scanner_solana - INFO - Token DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump doesn't meet mcap range: 68394.0
-2025-07-11 04:04:28,944 - scanner_solana - INFO - Token BYXGmbZttWDnLDzXzg6BFGeAbvw3hMsRUHhVYTxkpump doesn't meet mcap range: 52959.0
-2025-07-11 04:04:28,945 - scanner_solana - INFO - Token 8tRH3ZVCsvD5jwpassphR4aPoNvrNRAaYeAfCmCWpump doesn't meet min liquidity: 6118.677096704
-2025-07-11 04:04:28,946 - scanner_solana - INFO - Token EG1kt8w94kQK9mdfqQSyftzaSLfMEPv4m9rANDY16zGb doesn't meet min liquidity: 9478.862044302
-2025-07-11 04:04:28,947 - scanner_solana - INFO - Token G4aKCDWemLrH959qwjpZbLQm1aGB7FtRjvm3Toczpump doesn't meet min liquidity: 6838.56480426
-2025-07-11 04:04:28,947 - scanner_solana - INFO - Token 53xcfdymvYmrx9BY47MUFumBGwdVCTgyywbNaL2Upump doesn't meet min liquidity: 6128.926307872
-2025-07-11 04:04:28,948 - scanner_solana - INFO - Token 8BojTbbG2nnTXA1WgpHxoKdqdoa3AAnDvzqynHZdpump doesn't meet mcap range: 83179.99984435616
-2025-07-11 04:04:28,949 - scanner_solana - INFO - Token E2AfuDaaBoi8WU3RMP6Lz9WRAqqU8qGnDg7NPFNFpump doesn't meet mcap range: 22324.984632037143
-2025-07-11 04:04:28,950 - scanner_solana - INFO - Token Gt7Y89SB9rnieLbgi588rRGnSTK5MVawi9J7nXK7pump doesn't meet min liquidity: 6277.376235052
-2025-07-11 04:04:28,950 - scanner_solana - INFO - Token nL43agfrgjMUYXRosM2Lmjxns4W41at9uVTKAeCpump doesn't meet mcap range: 10896.970404907168
-2025-07-11 04:04:28,951 - scanner_solana - INFO - Token DCUUQDK5DsaMqVNdF2vXnE3owzvfuoLvd4cvW8aTpump doesn't meet mcap range: 52039.999635899694
-2025-07-11 04:04:29,589 - scanner_solana - INFO - Top 5 holders holding for token 47MVfEo7trABaSkmLjSJFJN3YcZsxCPvKc9EZ2eepump above threshold, top 5: 98.38 %
-2025-07-11 04:04:29,592 - scanner_solana - INFO - Token J7gaM1P2fVpivP9sRpyno8j6SGwUSffTADnWFQvqpump is ignorable
-2025-07-11 04:04:29,592 - scanner_solana - INFO - Token HMn9Vj8PgJyqJhFNFW8NrrXJPkiLiTdbqcH1VxMhpump doesn't meet mcap range: 47745.999992915116
-2025-07-11 04:04:29,592 - scanner_solana - INFO - Token GDT8vmX4ccCaaCSBMzX49ErEwHwAXh9ke1VL8oPXpump doesn't meet mcap range: 15821.106453360453
-2025-07-11 04:04:29,593 - scanner_solana - INFO - Token 225EGYN5zqdRfcghS38c4WgVoZ5TArMtYFGK5Pvupump doesn't meet min liquidity: 8993.4729121
-2025-07-11 04:04:29,593 - scanner_solana - INFO - Token 5314GTpDziP2ZdaANnt5KJEABGXy5Nn5Kyc3SFPYpump doesn't meet mcap range: 39134.99862832995
-2025-07-11 04:04:29,593 - scanner_solana - INFO - Token AnoFE93NRBEe7vjABrjhX4BdcJLSdW8yCVwxRsQMpump doesn't meet min liquidity: 6048.524513902
-2025-07-11 04:04:29,593 - scanner_solana - INFO - Token 4RYtJLcaGKMkYbodJ7X8QYPd2SnRWRvSVWMxfzwRpump is ignorable
-2025-07-11 04:04:29,593 - scanner_solana - INFO - Token 5BX8HNTgX44x4XVNFhCciE1gwsj6QFzsyGYVk5fspump doesn't meet min liquidity: 6063.88128361
-2025-07-11 04:04:29,593 - scanner_solana - INFO - Token 5dB7cVw5p52D15iZFsAEEeGoNq4oXcoR7vAkZFoMpump doesn't meet min liquidity: 7363.082383714
-2025-07-11 04:04:29,594 - scanner_solana - INFO - Token 2CiaDVgaeGS5ZGmh2sSLXZ4vgEbGYqxVoTsntk1tpump doesn't meet min liquidity: 6216.416420308
-2025-07-11 04:04:29,594 - scanner_solana - INFO - Token DwdBHDgqMJ41zni5nmhZQyjemCcg3NfGG5AXxoympump doesn't meet min liquidity: 6238.279963596
-2025-07-11 04:04:29,594 - scanner_solana - INFO - Token BvjSqDgy4phH7M3UoPnf4wfFAdmd2eVjzJtLi59q4UZj doesn't meet min liquidity: 6557.427669894
-2025-07-11 04:04:29,594 - scanner_solana - INFO - Token BJHtSnQ1y6DWrWSU4Y13m1iehDdd6EL1avGPWF1mSmBF doesn't meet min liquidity: 9846.782540116
-2025-07-11 04:04:29,594 - scanner_solana - INFO - Token BD7f5nfvdsy2pD2ftesCDySodeRG9RFJRVe4B6dpump doesn't meet min liquidity: 6515.172476382
-2025-07-11 04:04:29,594 - scanner_solana - INFO - Token oDkFUAugmGkq3DsyPxUp8ZM1w6tMAV2AkAG9qr9pump doesn't meet min liquidity: 6435.755918826
-2025-07-11 04:04:29,595 - scanner_solana - INFO - Token kK2KD9G4UDxzDZfuMBUhtkgJcYC2d5yZRpZ4jvXpump doesn't meet mcap range: 71282.0
-2025-07-11 04:04:29,595 - scanner_solana - INFO - Token Ftd6oceFVpHjLp2oSqLUGgsptW54io8PEqxJs2tZpump doesn't meet min liquidity: 7854.761922102
-2025-07-11 04:04:30,538 - scanner_solana - INFO - Top 5 holders holding for token GNYg2tXANTteRH4jjkn33AXnDHonDt9738L7M4oomKcM above threshold, top 5: 99.97999999999999 %
-2025-07-11 04:04:30,539 - scanner_solana - INFO - Token J4UgvF1kNbZjssk8pMoXVERP2CmGfr8NDwRecmuwpump doesn't meet mcap range: 20135.407622966337
-2025-07-11 04:04:30,539 - scanner_solana - INFO - Token iW4wRMguGFEgJ1ojDk2AnVMho7kWEwkCAAkwqB7pump doesn't meet min liquidity: 6484.26555749
-2025-07-11 04:04:30,540 - scanner_solana - INFO - Token Cch4x5gDRHVBDMoA93zddJWRioj3YgBFCmdae9rpump doesn't meet min liquidity: 6224.572411242
-2025-07-11 04:04:30,540 - scanner_solana - INFO - Token FfHQeCRsbPd7nhrCtnmkpeSMQ36TrsZx8uvhgSGypump doesn't meet min liquidity: 6404.818945938
-2025-07-11 04:04:30,540 - scanner_solana - INFO - Token ACXHEXvwWvP6j7Gw6rhCfBaF42vftaETRBRedHiWpump doesn't meet min liquidity: 6348.198341162
-2025-07-11 04:04:33,566 - scanner_solana - INFO - Token's Bc27BPokmhAjhsHKGuP2Lf8qhEaTRmcvc5JQF7phpump txs does not meet the outlier requirement: (outlier 92.47), (th 6256.11)
-2025-07-11 04:04:33,567 - scanner_solana - INFO - Token FveeaNqaQDE49pPxpqAoXGwgo3gcRaVVXwcsbzbppump doesn't meet min liquidity: 6061.647112042
-2025-07-11 04:04:33,568 - scanner_solana - INFO - Token xJ6bxfHRQ64UMDnsLW94SLGeAiZcwdNw5xUma3dpump doesn't meet min liquidity: 6992.582061534
-2025-07-11 04:04:33,569 - scanner_solana - INFO - Token KsXP5KzmjqvF9SPHiuxFN9nstGusDazjyYuefzdpump doesn't meet min liquidity: 6860.3183917
-2025-07-11 04:04:33,569 - scanner_solana - INFO - Token B7GcEGiJqUXKDCgnSdud97nMHSeBdspXMm5x3jQFpump doesn't meet min liquidity: 6154.369006826
-2025-07-11 04:04:33,570 - scanner_solana - INFO - Token FJbd6MBQ2su4DEQJVygvuTrFKZTaZHqkwJ4gnsSVRhfV doesn't meet mcap range: 71881.0
-2025-07-11 04:04:33,571 - scanner_solana - INFO - Token Ar8FNn4xzrRZnxyi1uTsMCik9rete5UiU18g2B8apump doesn't meet min liquidity: 9094.936054766
-2025-07-11 04:04:33,571 - scanner_solana - INFO - Token tg6hdq1pbX6HEo3bV8FcZH4cD9aKd8wxr1bWYmMVpxa doesn't meet min liquidity: 8925.155728624
-2025-07-11 04:04:33,572 - scanner_solana - INFO - Token neE7KXNcefaXNTK7vpGkJbzRW5YdnXHiD3Rni9Tpump doesn't meet min liquidity: 6134.571108054
-2025-07-11 04:04:33,573 - scanner_solana - INFO - Token 3Ddsfk7fjaFrBSt6ep6cTjbAN5nL1N76mdMVFaxfpump doesn't meet min liquidity: 6316.72746661
-2025-07-11 04:04:33,574 - scanner_solana - INFO - Token GQcXy1ZWiV2QwVZsqjECRX1fNxwxRZXz75jBw6wBpump doesn't meet min liquidity: 7962.607030134
-2025-07-11 04:04:33,574 - scanner_solana - INFO - Token DWSynLhYF9cvNUXMbSw3SS42XssFpKWrQ5nNqbgpump doesn't meet mcap range: 19338.125620166782
-2025-07-11 04:04:33,575 - scanner_solana - INFO - Token BfwUnVwNo6tzyLbZinUoPzzfc6hrPfSojaQXDscgpump doesn't meet min liquidity: 6068.24815557
-2025-07-11 04:04:33,576 - scanner_solana - INFO - Token BrKvsoy1VhMxgtiHYryhRjWuwmQ5uPesFfVPbnTXpump doesn't meet min liquidity: 7737.819098314
-2025-07-11 04:04:33,577 - scanner_solana - INFO - Token 4yYAswLCWWKQBEojvGNvXwRTCnUjYKEqogmE6Dkypump doesn't meet mcap range: 54407.473679268216
-2025-07-11 04:04:33,577 - scanner_solana - INFO - Token 21vNH7mrgowisrva7UvtCn1VhHVm4EgfsSzYvQxnf9Nh doesn't meet min liquidity: 8832.763134164
-2025-07-11 04:04:33,578 - scanner_solana - INFO - Token 3ret9iwvxpxTJBEzeNe2LDtcBTPeFr51ihwN89CYpump doesn't meet min liquidity: 6211.817153674
-2025-07-11 04:04:33,579 - scanner_solana - INFO - Token 4MqX6pVyWLqUaeNYSqEYe47xWkardCFy2JX6SUynpump doesn't meet min liquidity: 9715.694215562
-2025-07-11 04:04:33,579 - scanner_solana - INFO - Token Dp68rtmwnvNBDfPLf5zEobGCmD1aBNDQAQuLQtTNenEc doesn't meet mcap range: 10742.456253795035
-2025-07-11 04:04:33,580 - scanner_solana - INFO - Token CTGvWcBAf42ktXtrLC4CZxA4GpjjtfTYzpePqbDupump doesn't meet mcap range: 12923.006166001653
-2025-07-11 04:04:33,581 - scanner_solana - INFO - Token Ek3ts4r6kGC7VmFBVimFEz7CqyRZGpxcbwXs57YDYLoH doesn't meet min liquidity: 9505.592276356
-2025-07-11 04:04:33,582 - scanner_solana - INFO - Token DLzpWkuFooYM7nfNXDC74bQAjJc1vjVkHCa6zQympump doesn't meet min liquidity: 9875.934754952
-2025-07-11 04:04:33,582 - scanner_solana - INFO - Token 759rtBFtUWuMBy9yfeC7BMhkdt2KXrobRsSwAHwFpump doesn't meet min liquidity: 6245.995965386
-2025-07-11 04:04:33,583 - scanner_solana - INFO - Token 9Acwovebjxq5tft4ftCMSMq3hPNsrfrKMbpyGE55pump doesn't meet min liquidity: 9418.173475234
-2025-07-11 04:04:33,584 - scanner_solana - INFO - Token GtWKJcH75AGpck21TqfkWcgGCVGhsVd96hcNVKmpump doesn't meet min liquidity: 6819.777623642
-2025-07-11 04:04:33,585 - scanner_solana - INFO - Token 6yz2qmuz4FxA9Prya7zi97yGLVZnujWLSipLnQE9pump doesn't meet mcap range: 17206.783078019525
-2025-07-11 04:04:33,585 - scanner_solana - INFO - Token 7VpwdHd2JRwTavc6hHgpVuq5Bt5tWwQGi6de1xWgpump doesn't meet min liquidity: 7909.298429636
-2025-07-11 04:04:33,586 - scanner_solana - INFO - Token HdDufc35eZJHS5KWM7Ay5popqnAZLLMjQkr2h6XSpump doesn't meet min liquidity: 6486.474838606
-2025-07-11 04:04:33,587 - scanner_solana - INFO - Token 9EduKyUipen1tWG3JWGedbYLcVXf9e1qGMKEbhYzpump doesn't meet min liquidity: 6274.170552128
-2025-07-11 04:04:33,588 - scanner_solana - INFO - Token j8fVf6jsTeybjwDe3NcaVFtq4SPKxQyjnbqQc3ypump doesn't meet min liquidity: 6136.96830309
-2025-07-11 04:04:33,588 - scanner_solana - INFO - Token EQEPiWvGfL6w3ZwuaTU636K53GuJQEvXqfG4D8jXpump doesn't meet min liquidity: 5998.20207309
-2025-07-11 04:04:33,589 - scanner_solana - INFO - Token 5UxrcMyQrFdGgGKspEVsToJA8BAqKiWX1iALYbappump doesn't meet mcap range: 6762.006638372218
-2025-07-11 04:04:33,590 - scanner_solana - INFO - Token 7d7Y5F6N784qoRaEzEj48n184zQ4cczjz3LSSNCigqgv doesn't meet min liquidity: 6979.08600349
-2025-07-11 04:04:33,591 - scanner_solana - INFO - Token APbeRSWUaGpKaVjoQC8ABA41NnSwUHC3yXoZa4FCpump doesn't meet min liquidity: 6709.332834596
-2025-07-11 04:04:33,591 - scanner_solana - INFO - Token GDMPoujJaLL98VocJS6gDKpqeoGidohs2kAyM8Axpump doesn't meet min liquidity: 5939.900470562
-2025-07-11 04:04:33,592 - scanner_solana - INFO - Token 5q7pZ1ZFNJEGmrhp3nXeA7XYdWpUEP1rVx2tYNMhpump doesn't meet min liquidity: 7377.061008462
-2025-07-11 04:04:36,236 - scanner_solana - INFO - Token's EBP48qyGbZqDUjSEsNG6HoAYfL38cC4XekekVMQFpump txs does not meet the outlier requirement: (outlier 4672.54), (th 26227.28)
-2025-07-11 04:04:36,236 - scanner_solana - INFO - Token 72XcLnHNmce5Av4asjtChUcYDbvp23aaGYwJUdscpump doesn't meet mcap range: 10680.840276035753
-2025-07-11 04:04:36,237 - scanner_solana - INFO - Token 23zLMzazuQY2wB9uhmHxYCbA9NAh2Z63Q6eZMnrppump doesn't meet mcap range: 36784.53972913425
-2025-07-11 04:04:39,332 - scanner_solana - INFO - Token's 58UsJYGCSKJi68aQe27FTq2zQixwprBt2nAvF9Fppump txs does not meet the outlier requirement: (outlier 2311.32), (th 139837.16)
-2025-07-11 04:04:39,333 - scanner_solana - INFO - Token 3Je8LpdJFCqm59QiqC9fnki4ze1e435jVeVZCr1rpump doesn't meet min liquidity: 6443.693768166
-2025-07-11 04:04:42,558 - scanner_solana - INFO - Token's 225wNcgj6QJamuRBLqTN9usLrfD2YuK1LTFwENHMpump txs does not meet the outlier requirement: (outlier 44467.96), (th 84477.51)
-2025-07-11 04:04:42,559 - scanner_solana - INFO - Token 34Vz77ZqibwUSg6ifmNb1VdkdMm4JPLGYTZKiTw6pump doesn't meet min liquidity: 6498.867866428
-2025-07-11 04:04:42,559 - scanner_solana - INFO - Token PRaTqUZSTcy1BpVLTug4HNhUj4KUrrzqSTKP5h8pump doesn't meet min liquidity: 6754.96048989
-2025-07-11 04:04:42,559 - scanner_solana - INFO - Token FA8zzXiVfav2nfunCLiquqZZeqpBM1WcEngXXvHGpump doesn't meet min liquidity: 9427.224221752
-2025-07-11 04:04:42,560 - scanner_solana - INFO - Token E5jzAjujUR5WHS9gpMsKqMaoqDSKVVT1b1SKFKf3pump doesn't meet mcap range: 9601.99999999999
-2025-07-11 04:04:42,560 - scanner_solana - INFO - Token 9BMzdbmotK41M6mU48V9y52WytqLaruF61UCa3fkpump doesn't meet mcap range: 13801.984877755114
-2025-07-11 04:04:42,560 - scanner_solana - INFO - Token U22PVeV2XputjUBnDWPKu1B5YMFgws8GFt3Lh3qpump doesn't meet mcap range: 8054.8157908840285
-2025-07-11 04:04:42,561 - scanner_solana - INFO - Token uCtD3z3tDKrLHfEFmME46wkouyBgxi2UcAa8yJapump doesn't meet min liquidity: 6944.830870324
-2025-07-11 04:04:45,502 - scanner_solana - INFO - Token's EDPNErd8VomUD3AhhGaS15vq4mP58k56bKm35puBpump txs does not meet the outlier requirement: (outlier 3830.96), (th 22105.68)
-2025-07-11 04:04:45,503 - scanner_solana - INFO - Token UkKJAASGv52mmqborS2UHTnFLuaycYkNjHjoE9Vpump doesn't meet min liquidity: 6573.61596533
-2025-07-11 04:04:45,503 - scanner_solana - INFO - Token 9Xs4gN911d6DL1a6pn3pCHLPwF1JXaqewwar9PE9pump doesn't meet min liquidity: 6059.038038556
-2025-07-11 04:04:45,504 - scanner_solana - INFO - Token EuzAMWKacwppDJTVtzraGU8efLoGL8SYUi5R3appump doesn't meet min liquidity: 6217.2354454
-2025-07-11 04:04:45,505 - scanner_solana - INFO - Token 8CSp3d7w5Jj2EVfdFuKcunUCaorbyzGMAgJS5ew3pump doesn't meet min liquidity: 6054.370269394
-2025-07-11 04:04:45,506 - scanner_solana - INFO - Token 2arhmBCQssheGSLPY2b9QZawvJZTgDf8yASXuuXhpump doesn't meet min liquidity: 6854.194817968
-2025-07-11 04:04:45,506 - scanner_solana - INFO - Token 4Xph2k5J3yfyiLKgkAT8MnW2auwp2eS39RfNuyc7pump doesn't meet min liquidity: 6272.286412568
-2025-07-11 04:04:45,507 - scanner_solana - INFO - Token 5j4jMGjQq4uvoqSctSccQaN7sJR4pCnhDTbvsT56pump doesn't meet min liquidity: 6235.28261787
-2025-07-11 04:04:45,508 - scanner_solana - INFO - Token AUiWb6CwSknm43EpNEeVh4vzJCsSHvTcA1sJGZT8CSEk doesn't meet min liquidity: 6239.275015424
-2025-07-11 04:04:45,508 - scanner_solana - INFO - Token HXc72LshusSjr5mMEn9v6V3VspTGKZYZmG4BSWojpump doesn't meet mcap range: 15818.782730368996
-2025-07-11 04:04:45,509 - scanner_solana - INFO - Token FhNE1vvH4GqJ5GFmw7ZFprsUmzcgdbRYzcuvwzJ6pump doesn't meet mcap range: 17344.11854852884
-2025-07-11 04:04:45,510 - scanner_solana - INFO - Token FTeLTnjC2U6TVKcmHHqjxtD3FugNhkqzMdn5bzcdpump doesn't meet min liquidity: 8310.066495476
-2025-07-11 04:04:45,511 - scanner_solana - INFO - Token GTE7Yb3sNWHFArFu61jEx7mBpSRZrh3DUqi2JGGSpump doesn't meet min liquidity: 6051.64068131
-2025-07-11 04:04:45,512 - scanner_solana - INFO - Token FxbBxPmqBCkiVcjeXHXohGFx49R6ewSVScJxTpjtpump doesn't meet min liquidity: 8800.98835025
-2025-07-11 04:04:45,513 - scanner_solana - INFO - Token DEGdc41SguhEtVRbbVLai19WKqEAHGcFptQwCyA7pump doesn't meet min liquidity: 7612.925740658
-2025-07-11 04:04:45,513 - scanner_solana - INFO - Token 9aqrniLEVQb76W9yWpH3tv2gXrtBU3dMZszECYJppump doesn't meet min liquidity: 6137.727466628
-2025-07-11 04:04:45,517 - scanner_solana - ERROR - Ran into the following error while executing scan: keys must be str, int, float, bool or None, not HandlePoolResponse
-2025-07-11 04:04:45,517 - scanner_solana - ERROR - Exception: keys must be str, int, float, bool or None, not HandlePoolResponse
-2025-07-11 04:04:45,524 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
-  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 357, in run
-    utils.save_json(
-    ~~~~~~~~~~~~~~~^
-        scan_report,
-        ^^^^^^^^^^^^
-    ...<3 lines>...
-        ),
-        ^^
-    )
-    ^
-  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\utils.py", line 38, in save_json
-    json.dump(data, f, indent=2)
-    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Best-luckyGuy\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 179, in dump
-    for chunk in iterable:
-                 ^^^^^^^^
-  File "C:\Users\Best-luckyGuy\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 433, in _iterencode
-    yield from _iterencode_dict(o, _current_indent_level)
-  File "C:\Users\Best-luckyGuy\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 376, in _iterencode_dict
-    raise TypeError(f'keys must be str, int, float, bool or None, '
-                    f'not {key.__class__.__name__}')
-TypeError: keys must be str, int, float, bool or None, not HandlePoolResponse
+2025-07-11 04:37:54,921 - scanner_solana - INFO - Token 8LzjzgHRKnZVxtSHV5C5XDCAg1TJ6BPkjbemrJ7Cdump doesn't meet mcap range: 28600.68507209367
+2025-07-11 04:38:23,043 - scanner_solana - INFO - Fetched Helius data for token: DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump
+2025-07-11 04:38:23,043 - scanner_solana - INFO - Sending enhanced alert for token: DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump
+2025-07-11 04:38:28,475 - scanner_solana - INFO - Started
+2025-07-11 04:38:29,831 - scanner_solana - INFO - Token BrcGXDfWm3GftW1mg77itPUS5ChRpWGNoPPnBRPKpump doesn't meet min liquidity: 6387.2190411
+2025-07-11 04:38:29,832 - scanner_solana - INFO - Token 9BUfG1hyiUAHShynZcqxWRhhdeL8jTq4PidLTMD7pump doesn't meet min liquidity: 7148.481906756
+2025-07-11 04:38:29,832 - scanner_solana - ERROR - Failed to handle token of interest GqXsuvY2vBBC1ZfwDKyvhzJjA3SbCSWGYAUY6WoGpump due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 04:38:29,832 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 04:38:29,833 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
 
-2025-07-11 04:05:47,157 - scanner_solana - INFO - Token 8LzjzgHRKnZVxtSHV5C5XDCAg1TJ6BPkjbemrJ7Cdump doesn't meet mcap range: 54947.55256727237
-2025-07-11 04:05:47,158 - scanner_solana - INFO - Token DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump doesn't meet mcap range: 82560.0
-2025-07-11 04:05:47,159 - scanner_solana - INFO - Token BYXGmbZttWDnLDzXzg6BFGeAbvw3hMsRUHhVYTxkpump doesn't meet mcap range: 48399.0
-2025-07-11 04:05:47,160 - scanner_solana - INFO - Token 8tRH3ZVCsvD5jwpassphR4aPoNvrNRAaYeAfCmCWpump doesn't meet min liquidity: 6118.677096704
-2025-07-11 04:05:47,161 - scanner_solana - INFO - Token EG1kt8w94kQK9mdfqQSyftzaSLfMEPv4m9rANDY16zGb doesn't meet min liquidity: 9065.72566484
-2025-07-11 04:05:47,161 - scanner_solana - INFO - Token G4aKCDWemLrH959qwjpZbLQm1aGB7FtRjvm3Toczpump doesn't meet min liquidity: 6838.56480426
-2025-07-11 04:05:47,162 - scanner_solana - INFO - Token 53xcfdymvYmrx9BY47MUFumBGwdVCTgyywbNaL2Upump doesn't meet min liquidity: 6132.02140458
-2025-07-11 04:05:47,163 - scanner_solana - INFO - Token 8BojTbbG2nnTXA1WgpHxoKdqdoa3AAnDvzqynHZdpump doesn't meet mcap range: 78968.99985223566
-2025-07-11 04:05:47,164 - scanner_solana - INFO - Token E2AfuDaaBoi8WU3RMP6Lz9WRAqqU8qGnDg7NPFNFpump doesn't meet mcap range: 22054.984817898287
-2025-07-11 04:05:47,164 - scanner_solana - INFO - Token Gt7Y89SB9rnieLbgi588rRGnSTK5MVawi9J7nXK7pump doesn't meet min liquidity: 6277.376235052
-2025-07-11 04:05:47,165 - scanner_solana - INFO - Token nL43agfrgjMUYXRosM2Lmjxns4W41at9uVTKAeCpump doesn't meet mcap range: 11136.969753092699
-2025-07-11 04:05:47,166 - scanner_solana - INFO - Token DCUUQDK5DsaMqVNdF2vXnE3owzvfuoLvd4cvW8aTpump doesn't meet mcap range: 59618.999582872864
-2025-07-11 04:05:48,395 - scanner_solana - INFO - Top 5 holders holding for token 47MVfEo7trABaSkmLjSJFJN3YcZsxCPvKc9EZ2eepump above threshold, top 5: 98.38 %
-2025-07-11 04:05:48,397 - scanner_solana - INFO - Token J7gaM1P2fVpivP9sRpyno8j6SGwUSffTADnWFQvqpump is ignorable
-2025-07-11 04:05:48,397 - scanner_solana - INFO - Token HMn9Vj8PgJyqJhFNFW8NrrXJPkiLiTdbqcH1VxMhpump doesn't meet mcap range: 47689.999992923425
-2025-07-11 04:05:48,398 - scanner_solana - INFO - Token GDT8vmX4ccCaaCSBMzX49ErEwHwAXh9ke1VL8oPXpump doesn't meet mcap range: 16463.988875599505
-2025-07-11 04:05:48,399 - scanner_solana - INFO - Token 225EGYN5zqdRfcghS38c4WgVoZ5TArMtYFGK5Pvupump doesn't meet min liquidity: 8993.4729121
-2025-07-11 04:05:48,399 - scanner_solana - INFO - Token 5314GTpDziP2ZdaANnt5KJEABGXy5Nn5Kyc3SFPYpump doesn't meet mcap range: 39134.99862832995
-2025-07-11 04:05:48,400 - scanner_solana - INFO - Token AnoFE93NRBEe7vjABrjhX4BdcJLSdW8yCVwxRsQMpump doesn't meet min liquidity: 6048.524513902
-2025-07-11 04:05:48,401 - scanner_solana - INFO - Token 4RYtJLcaGKMkYbodJ7X8QYPd2SnRWRvSVWMxfzwRpump is ignorable
-2025-07-11 04:05:48,401 - scanner_solana - INFO - Token 5BX8HNTgX44x4XVNFhCciE1gwsj6QFzsyGYVk5fspump doesn't meet min liquidity: 6063.88128361
-2025-07-11 04:05:48,402 - scanner_solana - INFO - Token 5dB7cVw5p52D15iZFsAEEeGoNq4oXcoR7vAkZFoMpump doesn't meet min liquidity: 7363.082383714
-2025-07-11 04:05:48,403 - scanner_solana - INFO - Token 2CiaDVgaeGS5ZGmh2sSLXZ4vgEbGYqxVoTsntk1tpump doesn't meet min liquidity: 6216.416420308
-2025-07-11 04:05:48,403 - scanner_solana - INFO - Token DwdBHDgqMJ41zni5nmhZQyjemCcg3NfGG5AXxoympump doesn't meet min liquidity: 6238.279963596
-2025-07-11 04:05:48,404 - scanner_solana - INFO - Token BvjSqDgy4phH7M3UoPnf4wfFAdmd2eVjzJtLi59q4UZj doesn't meet min liquidity: 6557.427669894
-2025-07-11 04:05:48,405 - scanner_solana - INFO - Token BJHtSnQ1y6DWrWSU4Y13m1iehDdd6EL1avGPWF1mSmBF doesn't meet min liquidity: 9846.782540116
-2025-07-11 04:05:48,405 - scanner_solana - INFO - Token BD7f5nfvdsy2pD2ftesCDySodeRG9RFJRVe4B6dpump doesn't meet min liquidity: 6515.172476382
-2025-07-11 04:05:48,406 - scanner_solana - INFO - Token oDkFUAugmGkq3DsyPxUp8ZM1w6tMAV2AkAG9qr9pump doesn't meet min liquidity: 6435.755918826
-2025-07-11 04:05:48,407 - scanner_solana - INFO - Token kK2KD9G4UDxzDZfuMBUhtkgJcYC2d5yZRpZ4jvXpump doesn't meet mcap range: 71282.0
-2025-07-11 04:05:48,408 - scanner_solana - INFO - Token Ftd6oceFVpHjLp2oSqLUGgsptW54io8PEqxJs2tZpump doesn't meet min liquidity: 8175.22559966
-2025-07-11 04:05:49,589 - scanner_solana - INFO - Top 5 holders holding for token GNYg2tXANTteRH4jjkn33AXnDHonDt9738L7M4oomKcM above threshold, top 5: 99.97999999999999 %
-2025-07-11 04:05:49,590 - scanner_solana - INFO - Token J4UgvF1kNbZjssk8pMoXVERP2CmGfr8NDwRecmuwpump doesn't meet mcap range: 20449.289268878634
-2025-07-11 04:05:49,591 - scanner_solana - INFO - Token iW4wRMguGFEgJ1ojDk2AnVMho7kWEwkCAAkwqB7pump doesn't meet min liquidity: 6484.26555749
-2025-07-11 04:05:49,592 - scanner_solana - INFO - Token Cch4x5gDRHVBDMoA93zddJWRioj3YgBFCmdae9rpump doesn't meet min liquidity: 6224.572411242
-2025-07-11 04:05:49,592 - scanner_solana - INFO - Token FfHQeCRsbPd7nhrCtnmkpeSMQ36TrsZx8uvhgSGypump doesn't meet min liquidity: 6404.818945938
-2025-07-11 04:05:49,593 - scanner_solana - INFO - Token ACXHEXvwWvP6j7Gw6rhCfBaF42vftaETRBRedHiWpump doesn't meet min liquidity: 6348.198341162
-2025-07-11 04:05:52,305 - scanner_solana - INFO - Token's Bc27BPokmhAjhsHKGuP2Lf8qhEaTRmcvc5JQF7phpump txs does not meet the outlier requirement: (outlier 92.47), (th 6256.11)
-2025-07-11 04:05:52,306 - scanner_solana - INFO - Token FveeaNqaQDE49pPxpqAoXGwgo3gcRaVVXwcsbzbppump doesn't meet min liquidity: 6061.647112042
-2025-07-11 04:05:52,306 - scanner_solana - INFO - Token xJ6bxfHRQ64UMDnsLW94SLGeAiZcwdNw5xUma3dpump doesn't meet min liquidity: 6992.582061534
-2025-07-11 04:05:52,307 - scanner_solana - INFO - Token KsXP5KzmjqvF9SPHiuxFN9nstGusDazjyYuefzdpump doesn't meet min liquidity: 6860.3183917
-2025-07-11 04:05:52,308 - scanner_solana - INFO - Token B7GcEGiJqUXKDCgnSdud97nMHSeBdspXMm5x3jQFpump doesn't meet min liquidity: 6154.369006826
-2025-07-11 04:05:52,308 - scanner_solana - INFO - Token FJbd6MBQ2su4DEQJVygvuTrFKZTaZHqkwJ4gnsSVRhfV doesn't meet mcap range: 71881.0
-2025-07-11 04:05:52,309 - scanner_solana - INFO - Token Ar8FNn4xzrRZnxyi1uTsMCik9rete5UiU18g2B8apump doesn't meet min liquidity: 9094.936054766
-2025-07-11 04:05:52,310 - scanner_solana - INFO - Token tg6hdq1pbX6HEo3bV8FcZH4cD9aKd8wxr1bWYmMVpxa doesn't meet min liquidity: 8925.155728624
-2025-07-11 04:05:52,311 - scanner_solana - INFO - Token neE7KXNcefaXNTK7vpGkJbzRW5YdnXHiD3Rni9Tpump doesn't meet min liquidity: 6134.571108054
-2025-07-11 04:05:52,311 - scanner_solana - INFO - Token 3Ddsfk7fjaFrBSt6ep6cTjbAN5nL1N76mdMVFaxfpump doesn't meet min liquidity: 6316.72746661
-2025-07-11 04:05:52,312 - scanner_solana - INFO - Token GQcXy1ZWiV2QwVZsqjECRX1fNxwxRZXz75jBw6wBpump doesn't meet min liquidity: 7962.607030134
-2025-07-11 04:05:52,313 - scanner_solana - INFO - Token DWSynLhYF9cvNUXMbSw3SS42XssFpKWrQ5nNqbgpump doesn't meet mcap range: 19338.125620166782
-2025-07-11 04:05:52,314 - scanner_solana - INFO - Token BfwUnVwNo6tzyLbZinUoPzzfc6hrPfSojaQXDscgpump doesn't meet min liquidity: 6068.24815557
-2025-07-11 04:05:52,315 - scanner_solana - INFO - Token BrKvsoy1VhMxgtiHYryhRjWuwmQ5uPesFfVPbnTXpump doesn't meet min liquidity: 7737.819098314
-2025-07-11 04:05:52,315 - scanner_solana - INFO - Token 4yYAswLCWWKQBEojvGNvXwRTCnUjYKEqogmE6Dkypump doesn't meet mcap range: 54407.473679268216
-2025-07-11 04:05:52,316 - scanner_solana - INFO - Token 21vNH7mrgowisrva7UvtCn1VhHVm4EgfsSzYvQxnf9Nh doesn't meet min liquidity: 8832.763134164
-2025-07-11 04:05:52,316 - scanner_solana - INFO - Token 3ret9iwvxpxTJBEzeNe2LDtcBTPeFr51ihwN89CYpump doesn't meet min liquidity: 6211.817153674
-2025-07-11 04:05:52,317 - scanner_solana - INFO - Token 4MqX6pVyWLqUaeNYSqEYe47xWkardCFy2JX6SUynpump doesn't meet min liquidity: 9715.694215562
-2025-07-11 04:05:52,317 - scanner_solana - INFO - Token Dp68rtmwnvNBDfPLf5zEobGCmD1aBNDQAQuLQtTNenEc doesn't meet mcap range: 9907.498516485266
-2025-07-11 04:05:52,318 - scanner_solana - INFO - Token CTGvWcBAf42ktXtrLC4CZxA4GpjjtfTYzpePqbDupump doesn't meet mcap range: 12732.0356300089
-2025-07-11 04:05:52,318 - scanner_solana - INFO - Token Ek3ts4r6kGC7VmFBVimFEz7CqyRZGpxcbwXs57YDYLoH doesn't meet min liquidity: 9505.592276356
-2025-07-11 04:05:52,319 - scanner_solana - INFO - Token DLzpWkuFooYM7nfNXDC74bQAjJc1vjVkHCa6zQympump doesn't meet min liquidity: 9875.934754952
-2025-07-11 04:05:52,319 - scanner_solana - INFO - Token 759rtBFtUWuMBy9yfeC7BMhkdt2KXrobRsSwAHwFpump doesn't meet min liquidity: 6245.995965386
-2025-07-11 04:05:52,320 - scanner_solana - INFO - Token 9Acwovebjxq5tft4ftCMSMq3hPNsrfrKMbpyGE55pump doesn't meet min liquidity: 9125.937657714
-2025-07-11 04:05:52,320 - scanner_solana - INFO - Token GtWKJcH75AGpck21TqfkWcgGCVGhsVd96hcNVKmpump doesn't meet min liquidity: 6819.777623642
-2025-07-11 04:05:52,321 - scanner_solana - INFO - Token 6yz2qmuz4FxA9Prya7zi97yGLVZnujWLSipLnQE9pump doesn't meet mcap range: 17206.783078019525
-2025-07-11 04:05:52,321 - scanner_solana - INFO - Token 7VpwdHd2JRwTavc6hHgpVuq5Bt5tWwQGi6de1xWgpump doesn't meet min liquidity: 7909.298429636
-2025-07-11 04:05:52,322 - scanner_solana - INFO - Token HdDufc35eZJHS5KWM7Ay5popqnAZLLMjQkr2h6XSpump doesn't meet min liquidity: 6486.474838606
-2025-07-11 04:05:52,322 - scanner_solana - INFO - Token 9EduKyUipen1tWG3JWGedbYLcVXf9e1qGMKEbhYzpump doesn't meet min liquidity: 6274.170552128
-2025-07-11 04:05:52,322 - scanner_solana - INFO - Token j8fVf6jsTeybjwDe3NcaVFtq4SPKxQyjnbqQc3ypump doesn't meet min liquidity: 6136.96830309
-2025-07-11 04:05:52,323 - scanner_solana - INFO - Token EQEPiWvGfL6w3ZwuaTU636K53GuJQEvXqfG4D8jXpump doesn't meet min liquidity: 5998.20207309
-2025-07-11 04:05:52,323 - scanner_solana - INFO - Token 5UxrcMyQrFdGgGKspEVsToJA8BAqKiWX1iALYbappump doesn't meet mcap range: 6762.006638372218
-2025-07-11 04:05:52,324 - scanner_solana - INFO - Token 7d7Y5F6N784qoRaEzEj48n184zQ4cczjz3LSSNCigqgv doesn't meet min liquidity: 6979.08600349
-2025-07-11 04:05:52,324 - scanner_solana - INFO - Token APbeRSWUaGpKaVjoQC8ABA41NnSwUHC3yXoZa4FCpump doesn't meet min liquidity: 6709.332834596
-2025-07-11 04:05:52,324 - scanner_solana - INFO - Token GDMPoujJaLL98VocJS6gDKpqeoGidohs2kAyM8Axpump doesn't meet min liquidity: 5939.900470562
-2025-07-11 04:05:52,325 - scanner_solana - INFO - Token 5q7pZ1ZFNJEGmrhp3nXeA7XYdWpUEP1rVx2tYNMhpump doesn't meet min liquidity: 7377.061008462
-2025-07-11 04:05:55,875 - scanner_solana - INFO - Token's EBP48qyGbZqDUjSEsNG6HoAYfL38cC4XekekVMQFpump txs does not meet the outlier requirement: (outlier 4875.22), (th 26286.67)
-2025-07-11 04:05:55,876 - scanner_solana - INFO - Token 72XcLnHNmce5Av4asjtChUcYDbvp23aaGYwJUdscpump doesn't meet mcap range: 10500.876665656044
-2025-07-11 04:05:55,877 - scanner_solana - INFO - Token 23zLMzazuQY2wB9uhmHxYCbA9NAh2Z63Q6eZMnrppump doesn't meet mcap range: 36784.53972913425
-2025-07-11 04:05:58,980 - scanner_solana - INFO - Token's 58UsJYGCSKJi68aQe27FTq2zQixwprBt2nAvF9Fppump txs does not meet the outlier requirement: (outlier 2319.08), (th 139837.81)
-2025-07-11 04:05:58,981 - scanner_solana - INFO - Token 3Je8LpdJFCqm59QiqC9fnki4ze1e435jVeVZCr1rpump doesn't meet min liquidity: 6443.693768166
-2025-07-11 04:06:01,559 - scanner_solana - INFO - Token's 225wNcgj6QJamuRBLqTN9usLrfD2YuK1LTFwENHMpump txs does not meet the outlier requirement: (outlier 56507.82), (th 85547.77)
-2025-07-11 04:06:01,559 - scanner_solana - INFO - Token 34Vz77ZqibwUSg6ifmNb1VdkdMm4JPLGYTZKiTw6pump doesn't meet min liquidity: 6498.867866428
-2025-07-11 04:06:01,560 - scanner_solana - INFO - Token PRaTqUZSTcy1BpVLTug4HNhUj4KUrrzqSTKP5h8pump doesn't meet min liquidity: 6754.96048989
-2025-07-11 04:06:01,560 - scanner_solana - INFO - Token FA8zzXiVfav2nfunCLiquqZZeqpBM1WcEngXXvHGpump doesn't meet min liquidity: 9448.52458663
-2025-07-11 04:06:01,560 - scanner_solana - INFO - Token E5jzAjujUR5WHS9gpMsKqMaoqDSKVVT1b1SKFKf3pump doesn't meet mcap range: 9601.99999999999
-2025-07-11 04:06:01,560 - scanner_solana - INFO - Token 9BMzdbmotK41M6mU48V9y52WytqLaruF61UCa3fkpump doesn't meet mcap range: 13801.984877755114
-2025-07-11 04:06:01,560 - scanner_solana - INFO - Token U22PVeV2XputjUBnDWPKu1B5YMFgws8GFt3Lh3qpump doesn't meet mcap range: 8054.8157908840285
-2025-07-11 04:06:01,560 - scanner_solana - INFO - Token uCtD3z3tDKrLHfEFmME46wkouyBgxi2UcAa8yJapump doesn't meet min liquidity: 6944.830870324
-2025-07-11 04:06:03,863 - scanner_solana - INFO - Token's EDPNErd8VomUD3AhhGaS15vq4mP58k56bKm35puBpump txs does not meet the outlier requirement: (outlier 3964.02), (th 22147.05)
-2025-07-11 04:06:03,864 - scanner_solana - INFO - Token UkKJAASGv52mmqborS2UHTnFLuaycYkNjHjoE9Vpump doesn't meet min liquidity: 6573.61596533
-2025-07-11 04:06:03,865 - scanner_solana - INFO - Token 9Xs4gN911d6DL1a6pn3pCHLPwF1JXaqewwar9PE9pump doesn't meet min liquidity: 6059.038038556
-2025-07-11 04:06:03,866 - scanner_solana - INFO - Token EuzAMWKacwppDJTVtzraGU8efLoGL8SYUi5R3appump doesn't meet min liquidity: 6217.2354454
-2025-07-11 04:06:03,866 - scanner_solana - INFO - Token 8CSp3d7w5Jj2EVfdFuKcunUCaorbyzGMAgJS5ew3pump doesn't meet min liquidity: 6054.370269394
-2025-07-11 04:06:03,867 - scanner_solana - INFO - Token 2arhmBCQssheGSLPY2b9QZawvJZTgDf8yASXuuXhpump doesn't meet min liquidity: 6854.194817968
-2025-07-11 04:06:03,868 - scanner_solana - INFO - Token 4Xph2k5J3yfyiLKgkAT8MnW2auwp2eS39RfNuyc7pump doesn't meet min liquidity: 6272.286412568
-2025-07-11 04:06:03,869 - scanner_solana - INFO - Token 5j4jMGjQq4uvoqSctSccQaN7sJR4pCnhDTbvsT56pump doesn't meet min liquidity: 6235.28261787
-2025-07-11 04:06:03,869 - scanner_solana - INFO - Token AUiWb6CwSknm43EpNEeVh4vzJCsSHvTcA1sJGZT8CSEk doesn't meet min liquidity: 6239.275015424
-2025-07-11 04:06:03,870 - scanner_solana - INFO - Token HXc72LshusSjr5mMEn9v6V3VspTGKZYZmG4BSWojpump doesn't meet mcap range: 15818.782730368996
-2025-07-11 04:06:03,871 - scanner_solana - INFO - Token FhNE1vvH4GqJ5GFmw7ZFprsUmzcgdbRYzcuvwzJ6pump doesn't meet mcap range: 17344.11854852884
-2025-07-11 04:06:03,871 - scanner_solana - INFO - Token FTeLTnjC2U6TVKcmHHqjxtD3FugNhkqzMdn5bzcdpump doesn't meet min liquidity: 8310.066495476
-2025-07-11 04:06:03,872 - scanner_solana - INFO - Token GTE7Yb3sNWHFArFu61jEx7mBpSRZrh3DUqi2JGGSpump doesn't meet min liquidity: 6051.64068131
-2025-07-11 04:06:03,873 - scanner_solana - INFO - Token FxbBxPmqBCkiVcjeXHXohGFx49R6ewSVScJxTpjtpump doesn't meet min liquidity: 8800.98835025
-2025-07-11 04:06:03,874 - scanner_solana - INFO - Token DEGdc41SguhEtVRbbVLai19WKqEAHGcFptQwCyA7pump doesn't meet min liquidity: 7612.925740658
-2025-07-11 04:06:03,876 - scanner_solana - ERROR - Ran into the following error while executing scan: keys must be str, int, float, bool or None, not HandlePoolResponse
-2025-07-11 04:06:03,877 - scanner_solana - ERROR - Exception: keys must be str, int, float, bool or None, not HandlePoolResponse
-2025-07-11 04:06:03,882 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
-  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 357, in run
-    utils.save_json(
-    ~~~~~~~~~~~~~~~^
-        scan_report,
-        ^^^^^^^^^^^^
-    ...<3 lines>...
-        ),
-        ^^
-    )
-    ^
-  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\utils.py", line 38, in save_json
-    json.dump(data, f, indent=2)
-    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Best-luckyGuy\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 179, in dump
-    for chunk in iterable:
-                 ^^^^^^^^
-  File "C:\Users\Best-luckyGuy\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 433, in _iterencode
-    yield from _iterencode_dict(o, _current_indent_level)
-  File "C:\Users\Best-luckyGuy\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 376, in _iterencode_dict
-    raise TypeError(f'keys must be str, int, float, bool or None, '
-                    f'not {key.__class__.__name__}')
-TypeError: keys must be str, int, float, bool or None, not HandlePoolResponse
+2025-07-11 04:38:29,833 - scanner_solana - INFO - Token 8LzjzgHRKnZVxtSHV5C5XDCAg1TJ6BPkjbemrJ7Cdump doesn't meet mcap range: 23033.135707292164
+2025-07-11 04:39:30,489 - scanner_solana - INFO - Started
+2025-07-11 04:39:31,430 - scanner_solana - INFO - Token BrcGXDfWm3GftW1mg77itPUS5ChRpWGNoPPnBRPKpump doesn't meet min liquidity: 6387.2190411
+2025-07-11 04:39:31,431 - scanner_solana - INFO - Token 9BUfG1hyiUAHShynZcqxWRhhdeL8jTq4PidLTMD7pump doesn't meet min liquidity: 7148.481906756
+2025-07-11 04:39:31,431 - scanner_solana - ERROR - Failed to handle token of interest GqXsuvY2vBBC1ZfwDKyvhzJjA3SbCSWGYAUY6WoGpump due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 04:39:31,431 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 04:39:31,432 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
 
+2025-07-11 04:39:31,432 - scanner_solana - INFO - Token 8LzjzgHRKnZVxtSHV5C5XDCAg1TJ6BPkjbemrJ7Cdump doesn't meet mcap range: 23742.078325762755
+2025-07-11 04:40:06,265 - scanner_solana - INFO - Fetched Helius data for token: DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump
+2025-07-11 04:40:06,265 - scanner_solana - INFO - Sending enhanced alert for token: DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump
+2025-07-11 04:40:11,914 - scanner_solana - INFO - Token BYXGmbZttWDnLDzXzg6BFGeAbvw3hMsRUHhVYTxkpump doesn't meet mcap range: 18106.0
+2025-07-11 04:40:11,915 - scanner_solana - INFO - Token 8tRH3ZVCsvD5jwpassphR4aPoNvrNRAaYeAfCmCWpump doesn't meet min liquidity: 6613.931487664
+2025-07-11 04:40:11,917 - scanner_solana - INFO - Token EG1kt8w94kQK9mdfqQSyftzaSLfMEPv4m9rANDY16zGb doesn't meet min liquidity: 9040.193091158
+2025-07-11 04:40:11,918 - scanner_solana - INFO - Token G4aKCDWemLrH959qwjpZbLQm1aGB7FtRjvm3Toczpump doesn't meet min liquidity: 6919.957285568
+2025-07-11 04:40:11,918 - scanner_solana - INFO - Token 53xcfdymvYmrx9BY47MUFumBGwdVCTgyywbNaL2Upump doesn't meet min liquidity: 6386.023636292
+2025-07-11 04:40:11,919 - scanner_solana - INFO - Token 8BojTbbG2nnTXA1WgpHxoKdqdoa3AAnDvzqynHZdpump doesn't meet mcap range: 68072.99987262391
+2025-07-11 04:40:11,920 - scanner_solana - INFO - Token E2AfuDaaBoi8WU3RMP6Lz9WRAqqU8qGnDg7NPFNFpump doesn't meet mcap range: 13938.990404746506
+2025-07-11 04:40:11,921 - scanner_solana - INFO - Token Gt7Y89SB9rnieLbgi588rRGnSTK5MVawi9J7nXK7pump doesn't meet min liquidity: 6054.654180026
+2025-07-11 04:40:11,922 - scanner_solana - INFO - Token nL43agfrgjMUYXRosM2Lmjxns4W41at9uVTKAeCpump doesn't meet min liquidity: 9477.398989982
+2025-07-11 04:40:11,923 - scanner_solana - INFO - Token DCUUQDK5DsaMqVNdF2vXnE3owzvfuoLvd4cvW8aTpump doesn't meet mcap range: 79959.9994405561
+2025-07-11 04:40:12,857 - scanner_solana - INFO - Top 5 holders holding for token 47MVfEo7trABaSkmLjSJFJN3YcZsxCPvKc9EZ2eepump above threshold, top 5: 98.34 %
+2025-07-11 04:40:39,878 - scanner_solana - INFO - Fetched Helius data for token: J7gaM1P2fVpivP9sRpyno8j6SGwUSffTADnWFQvqpump
+2025-07-11 04:40:39,879 - scanner_solana - INFO - Sending enhanced alert for token: J7gaM1P2fVpivP9sRpyno8j6SGwUSffTADnWFQvqpump
+2025-07-11 04:40:44,307 - scanner_solana - INFO - Token HMn9Vj8PgJyqJhFNFW8NrrXJPkiLiTdbqcH1VxMhpump doesn't meet mcap range: 58300.99999134889
+2025-07-11 04:40:44,307 - scanner_solana - INFO - Token GDT8vmX4ccCaaCSBMzX49ErEwHwAXh9ke1VL8oPXpump doesn't meet mcap range: 17680.766337286794
+2025-07-11 04:40:44,307 - scanner_solana - INFO - Token 225EGYN5zqdRfcghS38c4WgVoZ5TArMtYFGK5Pvupump doesn't meet mcap range: 9381.611754871199
+2025-07-11 04:40:44,307 - scanner_solana - INFO - Token 5314GTpDziP2ZdaANnt5KJEABGXy5Nn5Kyc3SFPYpump doesn't meet mcap range: 39263.99862380854
+2025-07-11 04:40:44,308 - scanner_solana - INFO - Token AnoFE93NRBEe7vjABrjhX4BdcJLSdW8yCVwxRsQMpump doesn't meet min liquidity: 6130.873871188
+2025-07-11 04:41:12,067 - scanner_solana - INFO - Fetched Helius data for token: 4RYtJLcaGKMkYbodJ7X8QYPd2SnRWRvSVWMxfzwRpump
+2025-07-11 04:41:12,068 - scanner_solana - INFO - Sending enhanced alert for token: 4RYtJLcaGKMkYbodJ7X8QYPd2SnRWRvSVWMxfzwRpump
+2025-07-11 04:41:16,348 - scanner_solana - INFO - Token 5BX8HNTgX44x4XVNFhCciE1gwsj6QFzsyGYVk5fspump doesn't meet min liquidity: 6244.760271766
+2025-07-11 04:41:16,348 - scanner_solana - INFO - Token 5dB7cVw5p52D15iZFsAEEeGoNq4oXcoR7vAkZFoMpump doesn't meet min liquidity: 7728.371690446
+2025-07-11 04:41:16,349 - scanner_solana - INFO - Token 2CiaDVgaeGS5ZGmh2sSLXZ4vgEbGYqxVoTsntk1tpump doesn't meet min liquidity: 6343.116787528
+2025-07-11 04:41:16,349 - scanner_solana - INFO - Token DwdBHDgqMJ41zni5nmhZQyjemCcg3NfGG5AXxoympump doesn't meet min liquidity: 6357.347942392
+2025-07-11 04:41:16,349 - scanner_solana - INFO - Token BvjSqDgy4phH7M3UoPnf4wfFAdmd2eVjzJtLi59q4UZj doesn't meet min liquidity: 6729.223983168
+2025-07-11 04:41:16,350 - scanner_solana - INFO - Token BJHtSnQ1y6DWrWSU4Y13m1iehDdd6EL1avGPWF1mSmBF doesn't meet min liquidity: 9371.693559138
+2025-07-11 04:41:16,350 - scanner_solana - INFO - Token BD7f5nfvdsy2pD2ftesCDySodeRG9RFJRVe4B6dpump doesn't meet min liquidity: 6515.77794783
+2025-07-11 04:41:16,350 - scanner_solana - INFO - Token oDkFUAugmGkq3DsyPxUp8ZM1w6tMAV2AkAG9qr9pump doesn't meet min liquidity: 6466.46379177
+2025-07-11 04:41:16,350 - scanner_solana - INFO - Token kK2KD9G4UDxzDZfuMBUhtkgJcYC2d5yZRpZ4jvXpump doesn't meet mcap range: 69718.0
+2025-07-11 04:41:16,351 - scanner_solana - INFO - Token Ftd6oceFVpHjLp2oSqLUGgsptW54io8PEqxJs2tZpump doesn't meet min liquidity: 7845.747096884
+2025-07-11 04:41:17,289 - scanner_solana - INFO - Top 5 holders holding for token GNYg2tXANTteRH4jjkn33AXnDHonDt9738L7M4oomKcM above threshold, top 5: 99.97999999999999 %
+2025-07-11 04:41:17,290 - scanner_solana - INFO - Token J4UgvF1kNbZjssk8pMoXVERP2CmGfr8NDwRecmuwpump doesn't meet mcap range: 20844.14038395939
+2025-07-11 04:41:17,291 - scanner_solana - INFO - Token iW4wRMguGFEgJ1ojDk2AnVMho7kWEwkCAAkwqB7pump doesn't meet min liquidity: 6526.594604898
+2025-07-11 04:41:17,292 - scanner_solana - INFO - Token Cch4x5gDRHVBDMoA93zddJWRioj3YgBFCmdae9rpump doesn't meet min liquidity: 6224.572411242
+2025-07-11 04:41:17,293 - scanner_solana - INFO - Token FfHQeCRsbPd7nhrCtnmkpeSMQ36TrsZx8uvhgSGypump doesn't meet min liquidity: 6404.818945938
+2025-07-11 04:41:17,293 - scanner_solana - INFO - Token ACXHEXvwWvP6j7Gw6rhCfBaF42vftaETRBRedHiWpump doesn't meet min liquidity: 6348.198341162
+2025-07-11 04:41:22,418 - scanner_solana - INFO - Token's Bc27BPokmhAjhsHKGuP2Lf8qhEaTRmcvc5JQF7phpump txs does not meet the outlier requirement: (outlier 34.74), (th 6259.01)
+2025-07-11 04:41:22,419 - scanner_solana - INFO - Token FveeaNqaQDE49pPxpqAoXGwgo3gcRaVVXwcsbzbppump doesn't meet min liquidity: 6061.647112042
+2025-07-11 04:41:22,419 - scanner_solana - INFO - Token xJ6bxfHRQ64UMDnsLW94SLGeAiZcwdNw5xUma3dpump doesn't meet min liquidity: 7027.140031998
+2025-07-11 04:41:22,419 - scanner_solana - INFO - Token KsXP5KzmjqvF9SPHiuxFN9nstGusDazjyYuefzdpump doesn't meet min liquidity: 6911.901279354
+2025-07-11 04:41:22,419 - scanner_solana - INFO - Token B7GcEGiJqUXKDCgnSdud97nMHSeBdspXMm5x3jQFpump doesn't meet min liquidity: 6167.740364892
+2025-07-11 04:41:22,420 - scanner_solana - INFO - Token FJbd6MBQ2su4DEQJVygvuTrFKZTaZHqkwJ4gnsSVRhfV doesn't meet mcap range: 71881.0
+2025-07-11 04:41:22,420 - scanner_solana - INFO - Token Ar8FNn4xzrRZnxyi1uTsMCik9rete5UiU18g2B8apump doesn't meet min liquidity: 8038.082726692
+2025-07-11 04:41:22,420 - scanner_solana - INFO - Token tg6hdq1pbX6HEo3bV8FcZH4cD9aKd8wxr1bWYmMVpxa doesn't meet min liquidity: 8939.234578404
+2025-07-11 04:41:22,420 - scanner_solana - INFO - Token neE7KXNcefaXNTK7vpGkJbzRW5YdnXHiD3Rni9Tpump doesn't meet min liquidity: 6134.571108054
+2025-07-11 04:41:22,420 - scanner_solana - INFO - Token 3Ddsfk7fjaFrBSt6ep6cTjbAN5nL1N76mdMVFaxfpump doesn't meet min liquidity: 6316.72746661
+2025-07-11 04:41:22,421 - scanner_solana - INFO - Token GQcXy1ZWiV2QwVZsqjECRX1fNxwxRZXz75jBw6wBpump doesn't meet min liquidity: 8072.716442978
+2025-07-11 04:41:22,421 - scanner_solana - INFO - Token DWSynLhYF9cvNUXMbSw3SS42XssFpKWrQ5nNqbgpump doesn't meet mcap range: 17806.194886928482
+2025-07-11 04:41:22,421 - scanner_solana - INFO - Token BfwUnVwNo6tzyLbZinUoPzzfc6hrPfSojaQXDscgpump doesn't meet min liquidity: 6068.24815557
+2025-07-11 04:41:22,421 - scanner_solana - INFO - Token BrKvsoy1VhMxgtiHYryhRjWuwmQ5uPesFfVPbnTXpump doesn't meet min liquidity: 7569.554247548
+2025-07-11 04:41:22,422 - scanner_solana - INFO - Token 4yYAswLCWWKQBEojvGNvXwRTCnUjYKEqogmE6Dkypump doesn't meet mcap range: 54420.47355351153
+2025-07-11 04:41:22,422 - scanner_solana - INFO - Token 21vNH7mrgowisrva7UvtCn1VhHVm4EgfsSzYvQxnf9Nh doesn't meet min liquidity: 8669.247849814
+2025-07-11 04:41:22,422 - scanner_solana - INFO - Token 3ret9iwvxpxTJBEzeNe2LDtcBTPeFr51ihwN89CYpump doesn't meet min liquidity: 6211.817153674
+2025-07-11 04:41:22,423 - scanner_solana - INFO - Token 4MqX6pVyWLqUaeNYSqEYe47xWkardCFy2JX6SUynpump doesn't meet min liquidity: 9692.625083234
+2025-07-11 04:41:22,423 - scanner_solana - INFO - Token Dp68rtmwnvNBDfPLf5zEobGCmD1aBNDQAQuLQtTNenEc doesn't meet mcap range: 9722.507880075316
+2025-07-11 04:41:22,423 - scanner_solana - INFO - Token CTGvWcBAf42ktXtrLC4CZxA4GpjjtfTYzpePqbDupump doesn't meet mcap range: 12323.098723092484
+2025-07-11 04:41:22,423 - scanner_solana - INFO - Token Ek3ts4r6kGC7VmFBVimFEz7CqyRZGpxcbwXs57YDYLoH doesn't meet min liquidity: 9592.437868156
+2025-07-11 04:41:22,424 - scanner_solana - INFO - Token DLzpWkuFooYM7nfNXDC74bQAjJc1vjVkHCa6zQympump doesn't meet min liquidity: 9875.934754952
+2025-07-11 04:41:22,424 - scanner_solana - INFO - Token 759rtBFtUWuMBy9yfeC7BMhkdt2KXrobRsSwAHwFpump doesn't meet min liquidity: 6245.995965386
+2025-07-11 04:41:22,424 - scanner_solana - INFO - Token 9Acwovebjxq5tft4ftCMSMq3hPNsrfrKMbpyGE55pump doesn't meet min liquidity: 9236.900436434
+2025-07-11 04:41:22,424 - scanner_solana - INFO - Token GtWKJcH75AGpck21TqfkWcgGCVGhsVd96hcNVKmpump doesn't meet min liquidity: 6819.777623642
+2025-07-11 04:41:22,425 - scanner_solana - INFO - Token 6yz2qmuz4FxA9Prya7zi97yGLVZnujWLSipLnQE9pump doesn't meet mcap range: 17041.823505195563
+2025-07-11 04:41:22,425 - scanner_solana - INFO - Token 7VpwdHd2JRwTavc6hHgpVuq5Bt5tWwQGi6de1xWgpump doesn't meet min liquidity: 7968.896369866
+2025-07-11 04:41:22,425 - scanner_solana - INFO - Token HdDufc35eZJHS5KWM7Ay5popqnAZLLMjQkr2h6XSpump doesn't meet min liquidity: 6486.474838606
+2025-07-11 04:41:22,425 - scanner_solana - INFO - Token 9EduKyUipen1tWG3JWGedbYLcVXf9e1qGMKEbhYzpump doesn't meet min liquidity: 6274.170552128
+2025-07-11 04:41:22,426 - scanner_solana - INFO - Token j8fVf6jsTeybjwDe3NcaVFtq4SPKxQyjnbqQc3ypump doesn't meet min liquidity: 6136.96830309
+2025-07-11 04:41:22,426 - scanner_solana - INFO - Token EQEPiWvGfL6w3ZwuaTU636K53GuJQEvXqfG4D8jXpump doesn't meet min liquidity: 5998.20207309
+2025-07-11 04:41:22,426 - scanner_solana - INFO - Token 5UxrcMyQrFdGgGKspEVsToJA8BAqKiWX1iALYbappump doesn't meet mcap range: 6698.961209793875
+2025-07-11 04:41:22,426 - scanner_solana - INFO - Token 7d7Y5F6N784qoRaEzEj48n184zQ4cczjz3LSSNCigqgv doesn't meet min liquidity: 7003.10782203
+2025-07-11 04:41:22,426 - scanner_solana - INFO - Token APbeRSWUaGpKaVjoQC8ABA41NnSwUHC3yXoZa4FCpump doesn't meet min liquidity: 6752.731387368
+2025-07-11 04:41:22,426 - scanner_solana - INFO - Token GDMPoujJaLL98VocJS6gDKpqeoGidohs2kAyM8Axpump doesn't meet min liquidity: 5939.900470562
+2025-07-11 04:41:22,427 - scanner_solana - INFO - Token 5q7pZ1ZFNJEGmrhp3nXeA7XYdWpUEP1rVx2tYNMhpump doesn't meet min liquidity: 7377.061008462
+2025-07-11 04:41:24,690 - scanner_solana - INFO - Token's EBP48qyGbZqDUjSEsNG6HoAYfL38cC4XekekVMQFpump txs does not meet the outlier requirement: (outlier 5833.22), (th 26596.12)
+2025-07-11 04:41:24,691 - scanner_solana - INFO - Token 72XcLnHNmce5Av4asjtChUcYDbvp23aaGYwJUdscpump doesn't meet min liquidity: 9203.34879636
+2025-07-11 04:41:24,692 - scanner_solana - INFO - Token 23zLMzazuQY2wB9uhmHxYCbA9NAh2Z63Q6eZMnrppump doesn't meet mcap range: 34540.567807096
+2025-07-11 04:41:30,556 - scanner_solana - INFO - Token's 58UsJYGCSKJi68aQe27FTq2zQixwprBt2nAvF9Fppump txs does not meet the outlier requirement: (outlier 6897.10), (th 140409.50)
+2025-07-11 04:41:30,557 - scanner_solana - INFO - Token 3Je8LpdJFCqm59QiqC9fnki4ze1e435jVeVZCr1rpump doesn't meet min liquidity: 6479.80902253
+2025-07-11 04:41:57,571 - scanner_solana - INFO - Fetched Helius data for token: 225wNcgj6QJamuRBLqTN9usLrfD2YuK1LTFwENHMpump
+2025-07-11 04:41:57,571 - scanner_solana - INFO - Sending enhanced alert for token: 225wNcgj6QJamuRBLqTN9usLrfD2YuK1LTFwENHMpump
+2025-07-11 04:42:03,388 - scanner_solana - INFO - Token 34Vz77ZqibwUSg6ifmNb1VdkdMm4JPLGYTZKiTw6pump doesn't meet min liquidity: 6571.780779934
+2025-07-11 04:42:03,388 - scanner_solana - INFO - Token PRaTqUZSTcy1BpVLTug4HNhUj4KUrrzqSTKP5h8pump doesn't meet min liquidity: 6754.96048989
+2025-07-11 04:42:03,388 - scanner_solana - INFO - Token FA8zzXiVfav2nfunCLiquqZZeqpBM1WcEngXXvHGpump doesn't meet min liquidity: 9540.707369686
+2025-07-11 04:42:03,388 - scanner_solana - INFO - Token E5jzAjujUR5WHS9gpMsKqMaoqDSKVVT1b1SKFKf3pump doesn't meet mcap range: 9772.99999999999
+2025-07-11 04:42:03,389 - scanner_solana - INFO - Token 9BMzdbmotK41M6mU48V9y52WytqLaruF61UCa3fkpump doesn't meet mcap range: 13308.985417913551
+2025-07-11 04:42:03,389 - scanner_solana - INFO - Token U22PVeV2XputjUBnDWPKu1B5YMFgws8GFt3Lh3qpump doesn't meet mcap range: 7973.8176432662
+2025-07-11 04:42:03,389 - scanner_solana - INFO - Token uCtD3z3tDKrLHfEFmME46wkouyBgxi2UcAa8yJapump doesn't meet min liquidity: 6944.830870324
+2025-07-11 04:42:08,139 - scanner_solana - INFO - Token's EDPNErd8VomUD3AhhGaS15vq4mP58k56bKm35puBpump txs does not meet the outlier requirement: (outlier 3700.43), (th 22327.20)
+2025-07-11 04:42:08,140 - scanner_solana - INFO - Token UkKJAASGv52mmqborS2UHTnFLuaycYkNjHjoE9Vpump doesn't meet min liquidity: 6609.261259466
+2025-07-11 04:42:08,141 - scanner_solana - INFO - Token 9Xs4gN911d6DL1a6pn3pCHLPwF1JXaqewwar9PE9pump doesn't meet min liquidity: 6057.151690606
+2025-07-11 04:42:08,141 - scanner_solana - INFO - Token EuzAMWKacwppDJTVtzraGU8efLoGL8SYUi5R3appump doesn't meet min liquidity: 6217.2354454
+2025-07-11 04:42:08,142 - scanner_solana - INFO - Token 8CSp3d7w5Jj2EVfdFuKcunUCaorbyzGMAgJS5ew3pump doesn't meet min liquidity: 6054.370269394
+2025-07-11 04:42:08,143 - scanner_solana - INFO - Token 2arhmBCQssheGSLPY2b9QZawvJZTgDf8yASXuuXhpump doesn't meet min liquidity: 6854.194817968
+2025-07-11 04:42:08,144 - scanner_solana - INFO - Token 4Xph2k5J3yfyiLKgkAT8MnW2auwp2eS39RfNuyc7pump doesn't meet min liquidity: 6272.286412568
+2025-07-11 04:42:08,145 - scanner_solana - INFO - Token 5j4jMGjQq4uvoqSctSccQaN7sJR4pCnhDTbvsT56pump doesn't meet min liquidity: 6235.28261787
+2025-07-11 04:42:08,145 - scanner_solana - INFO - Token AUiWb6CwSknm43EpNEeVh4vzJCsSHvTcA1sJGZT8CSEk doesn't meet min liquidity: 6239.275015424
+2025-07-11 04:42:08,146 - scanner_solana - INFO - Token HXc72LshusSjr5mMEn9v6V3VspTGKZYZmG4BSWojpump doesn't meet mcap range: 15722.784048902693
+2025-07-11 04:42:08,146 - scanner_solana - INFO - Token FhNE1vvH4GqJ5GFmw7ZFprsUmzcgdbRYzcuvwzJ6pump doesn't meet mcap range: 17378.110941349336
+2025-07-11 04:42:08,147 - scanner_solana - INFO - Token FTeLTnjC2U6TVKcmHHqjxtD3FugNhkqzMdn5bzcdpump doesn't meet min liquidity: 8272.335647236
+2025-07-11 04:42:08,150 - scanner_solana - INFO - Finished cycle scan, sleeping for: -97.66
+2025-07-11 04:42:09,729 - scanner_solana - INFO - Token BrcGXDfWm3GftW1mg77itPUS5ChRpWGNoPPnBRPKpump doesn't meet min liquidity: 6431.554476534
+2025-07-11 04:42:09,730 - scanner_solana - INFO - Token 9BUfG1hyiUAHShynZcqxWRhhdeL8jTq4PidLTMD7pump doesn't meet min liquidity: 7199.871738552
+2025-07-11 04:42:09,731 - scanner_solana - ERROR - Failed to handle token of interest GqXsuvY2vBBC1ZfwDKyvhzJjA3SbCSWGYAUY6WoGpump due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 04:42:09,731 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 04:42:09,734 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\solana-scanner----\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+
+2025-07-11 04:42:09,735 - scanner_solana - INFO - Token 8LzjzgHRKnZVxtSHV5C5XDCAg1TJ6BPkjbemrJ7Cdump doesn't meet mcap range: 29213.635460136655
+2025-07-11 04:42:09,736 - scanner_solana - INFO - Token DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump is ignorable
+2025-07-11 04:42:09,737 - scanner_solana - INFO - Token BYXGmbZttWDnLDzXzg6BFGeAbvw3hMsRUHhVYTxkpump doesn't meet mcap range: 17735.0
+2025-07-11 04:42:09,738 - scanner_solana - INFO - Token 8tRH3ZVCsvD5jwpassphR4aPoNvrNRAaYeAfCmCWpump doesn't meet min liquidity: 6121.481854504
+2025-07-11 04:42:09,738 - scanner_solana - INFO - Token EG1kt8w94kQK9mdfqQSyftzaSLfMEPv4m9rANDY16zGb doesn't meet min liquidity: 9039.356679674
+2025-07-11 04:42:09,739 - scanner_solana - INFO - Token G4aKCDWemLrH959qwjpZbLQm1aGB7FtRjvm3Toczpump doesn't meet min liquidity: 6919.957285568
+2025-07-11 04:42:09,740 - scanner_solana - INFO - Token 53xcfdymvYmrx9BY47MUFumBGwdVCTgyywbNaL2Upump doesn't meet min liquidity: 6386.023636292
+2025-07-11 04:42:09,741 - scanner_solana - INFO - Token 8BojTbbG2nnTXA1WgpHxoKdqdoa3AAnDvzqynHZdpump doesn't meet mcap range: 62802.999882484975
+2025-07-11 04:42:09,741 - scanner_solana - INFO - Token E2AfuDaaBoi8WU3RMP6Lz9WRAqqU8qGnDg7NPFNFpump doesn't meet mcap range: 14713.989871256195
+2025-07-11 04:42:09,742 - scanner_solana - INFO - Token Gt7Y89SB9rnieLbgi588rRGnSTK5MVawi9J7nXK7pump doesn't meet min liquidity: 6054.654180026
+2025-07-11 04:42:09,743 - scanner_solana - INFO - Token nL43agfrgjMUYXRosM2Lmjxns4W41at9uVTKAeCpump doesn't meet min liquidity: 9164.64838744
+2025-07-11 05:19:39,980 - scanner_solana - INFO - Started
+2025-07-11 05:19:43,121 - scanner_solana - INFO - Top 5 holders holding for token rY77pzmbR4d9KFL5qTnHYXtyP7Wj7hYyysbnYc2pump above threshold, top 5: 66.21999999999998 %
+2025-07-11 05:19:43,122 - scanner_solana - ERROR - Failed to handle token of interest FJ69q856bAeDup9Uqo1BCN3xtVnXKFm3xGiDUEbcpCBN due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:43,123 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:43,127 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+
+2025-07-11 05:19:43,128 - scanner_solana - INFO - Token Br9smJn1ZtLrY2rSs2C5wvD4b2JSmX3nQrsJCpLjreaE doesn't meet min liquidity: 6375.962477062
+2025-07-11 05:19:43,129 - scanner_solana - ERROR - Failed to handle token of interest 3QhbqbkP3fCjBQZX1HPt8oV2xPa8SxgAcun1X7PpRuNb due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:43,130 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:43,133 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+
+2025-07-11 05:19:43,134 - scanner_solana - INFO - Token 9WrDRGJRyZERJFKAzManVUNyar49zPsfuA9r3yMEyhdD doesn't meet min liquidity: 8593.146933248
+2025-07-11 05:19:44,478 - scanner_solana - INFO - Top 5 holders holding for token EXxDT7b7APz1r2zoPffA8mmAfjj9JnnaV9c9bY7Kpump above threshold, top 5: 57.3 %
+2025-07-11 05:19:44,479 - scanner_solana - INFO - Token Ceoxd3muaKaqNkNeyg5NxeDWdrsgJqfesrdbuD6Apump doesn't meet mcap range: 10938.0
+2025-07-11 05:19:44,479 - scanner_solana - INFO - Token BrcGXDfWm3GftW1mg77itPUS5ChRpWGNoPPnBRPKpump doesn't meet min liquidity: 6263.743187086
+2025-07-11 05:19:44,480 - scanner_solana - INFO - Token 9BUfG1hyiUAHShynZcqxWRhhdeL8jTq4PidLTMD7pump doesn't meet min liquidity: 6658.20295524
+2025-07-11 05:19:44,481 - scanner_solana - ERROR - Failed to handle token of interest GqXsuvY2vBBC1ZfwDKyvhzJjA3SbCSWGYAUY6WoGpump due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:44,482 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:44,484 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+
+2025-07-11 05:19:44,485 - scanner_solana - INFO - Token 8LzjzgHRKnZVxtSHV5C5XDCAg1TJ6BPkjbemrJ7Cdump doesn't meet mcap range: 25500.93596453536
+2025-07-11 05:19:44,486 - scanner_solana - ERROR - Failed to handle token of interest DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:44,486 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:44,488 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+
+2025-07-11 05:19:44,489 - scanner_solana - INFO - Token BYXGmbZttWDnLDzXzg6BFGeAbvw3hMsRUHhVYTxkpump doesn't meet mcap range: 14542.0
+2025-07-11 05:19:44,490 - scanner_solana - INFO - Token 8tRH3ZVCsvD5jwpassphR4aPoNvrNRAaYeAfCmCWpump doesn't meet min liquidity: 6058.579478724
+2025-07-11 05:19:44,491 - scanner_solana - INFO - Token EG1kt8w94kQK9mdfqQSyftzaSLfMEPv4m9rANDY16zGb doesn't meet min liquidity: 8537.528274746
+2025-07-11 05:19:44,491 - scanner_solana - INFO - Token G4aKCDWemLrH959qwjpZbLQm1aGB7FtRjvm3Toczpump doesn't meet min liquidity: 6899.743208982
+2025-07-11 05:19:44,492 - scanner_solana - INFO - Token 53xcfdymvYmrx9BY47MUFumBGwdVCTgyywbNaL2Upump doesn't meet min liquidity: 6184.542696156
+2025-07-11 05:19:44,493 - scanner_solana - INFO - Token 8BojTbbG2nnTXA1WgpHxoKdqdoa3AAnDvzqynHZdpump doesn't meet mcap range: 43108.99991935026
+2025-07-11 05:19:44,493 - scanner_solana - INFO - Token E2AfuDaaBoi8WU3RMP6Lz9WRAqqU8qGnDg7NPFNFpump doesn't meet mcap range: 16850.99006696807
+2025-07-11 05:19:44,494 - scanner_solana - INFO - Token Gt7Y89SB9rnieLbgi588rRGnSTK5MVawi9J7nXK7pump doesn't meet min liquidity: 6154.027407604
+2025-07-11 05:19:44,495 - scanner_solana - INFO - Token nL43agfrgjMUYXRosM2Lmjxns4W41at9uVTKAeCpump doesn't meet min liquidity: 7769.054043448
+2025-07-11 05:19:48,403 - scanner_solana - INFO - Started
+2025-07-11 05:19:50,523 - scanner_solana - INFO - Top 5 holders holding for token rY77pzmbR4d9KFL5qTnHYXtyP7Wj7hYyysbnYc2pump above threshold, top 5: 66.21999999999998 %
+2025-07-11 05:19:50,523 - scanner_solana - ERROR - Failed to handle token of interest FJ69q856bAeDup9Uqo1BCN3xtVnXKFm3xGiDUEbcpCBN due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:50,524 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:50,527 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+
+2025-07-11 05:19:50,528 - scanner_solana - INFO - Token Br9smJn1ZtLrY2rSs2C5wvD4b2JSmX3nQrsJCpLjreaE doesn't meet min liquidity: 6375.962477062
+2025-07-11 05:19:50,529 - scanner_solana - ERROR - Failed to handle token of interest 3QhbqbkP3fCjBQZX1HPt8oV2xPa8SxgAcun1X7PpRuNb due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:50,529 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:50,532 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+
+2025-07-11 05:19:50,533 - scanner_solana - INFO - Token 9WrDRGJRyZERJFKAzManVUNyar49zPsfuA9r3yMEyhdD doesn't meet min liquidity: 8593.146933248
+2025-07-11 05:19:51,991 - scanner_solana - INFO - Top 5 holders holding for token EXxDT7b7APz1r2zoPffA8mmAfjj9JnnaV9c9bY7Kpump above threshold, top 5: 57.3 %
+2025-07-11 05:19:51,991 - scanner_solana - ERROR - Failed to handle token of interest Ceoxd3muaKaqNkNeyg5NxeDWdrsgJqfesrdbuD6Apump due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:51,992 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:51,994 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+
+2025-07-11 05:19:51,995 - scanner_solana - INFO - Token BrcGXDfWm3GftW1mg77itPUS5ChRpWGNoPPnBRPKpump doesn't meet min liquidity: 6263.743187086
+2025-07-11 05:19:51,996 - scanner_solana - INFO - Token 9BUfG1hyiUAHShynZcqxWRhhdeL8jTq4PidLTMD7pump doesn't meet min liquidity: 6658.20295524
+2025-07-11 05:19:51,997 - scanner_solana - ERROR - Failed to handle token of interest GqXsuvY2vBBC1ZfwDKyvhzJjA3SbCSWGYAUY6WoGpump due to float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:51,997 - scanner_solana - ERROR - Exception: float() argument must be a string or a real number, not 'NoneType'
+2025-07-11 05:19:51,999 - scanner_solana - ERROR - Stack trace: Traceback (most recent call last):
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 373, in run
+    resp = self._handle_token_of_interest(token_data, timestamp)
+  File "E:\MyProject\Project\2025-6-28_Solana-Analytics(long-term)\working\SOL_TELEGRAM_BOT\solana_scanner.py", line 79, in _handle_token_of_interest
+    mcap_usd = float(token_data["fullyDilutedValuation"])
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+
+2025-07-11 05:19:52,000 - scanner_solana - INFO - Token 8LzjzgHRKnZVxtSHV5C5XDCAg1TJ6BPkjbemrJ7Cdump doesn't meet mcap range: 23095.13068944333
+2025-07-11 05:20:15,898 - scanner_solana - INFO - Fetched Helius data for token: DCUUQDK5DsaMqVNdF2vXnE3owzvfuoLvd4cvW8aTpump
+2025-07-11 05:20:15,899 - scanner_solana - INFO - Sending enhanced alert for token: DCUUQDK5DsaMqVNdF2vXnE3owzvfuoLvd4cvW8aTpump
+2025-07-11 05:20:21,421 - scanner_solana - INFO - Top 5 holders holding for token 47MVfEo7trABaSkmLjSJFJN3YcZsxCPvKc9EZ2eepump above threshold, top 5: 98.31 %
+2025-07-11 05:20:29,935 - scanner_solana - INFO - Fetched Helius data for token: DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump
+2025-07-11 05:20:29,936 - scanner_solana - INFO - Sending enhanced alert for token: DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump
+2025-07-11 05:20:34,813 - scanner_solana - INFO - Token BYXGmbZttWDnLDzXzg6BFGeAbvw3hMsRUHhVYTxkpump doesn't meet mcap range: 14542.0
+2025-07-11 05:20:34,813 - scanner_solana - INFO - Token 8tRH3ZVCsvD5jwpassphR4aPoNvrNRAaYeAfCmCWpump doesn't meet min liquidity: 6058.579478724
+2025-07-11 05:20:34,814 - scanner_solana - INFO - Token EG1kt8w94kQK9mdfqQSyftzaSLfMEPv4m9rANDY16zGb doesn't meet min liquidity: 8537.528274746
+2025-07-11 05:20:34,814 - scanner_solana - INFO - Token G4aKCDWemLrH959qwjpZbLQm1aGB7FtRjvm3Toczpump doesn't meet min liquidity: 6899.743208982
+2025-07-11 05:20:34,814 - scanner_solana - INFO - Token 53xcfdymvYmrx9BY47MUFumBGwdVCTgyywbNaL2Upump doesn't meet min liquidity: 6184.542696156
+2025-07-11 05:20:34,814 - scanner_solana - INFO - Token 8BojTbbG2nnTXA1WgpHxoKdqdoa3AAnDvzqynHZdpump doesn't meet mcap range: 43108.99991933577
+2025-07-11 05:20:34,814 - scanner_solana - INFO - Token E2AfuDaaBoi8WU3RMP6Lz9WRAqqU8qGnDg7NPFNFpump doesn't meet mcap range: 16850.988400199683
+2025-07-11 05:20:34,815 - scanner_solana - INFO - Token Gt7Y89SB9rnieLbgi588rRGnSTK5MVawi9J7nXK7pump doesn't meet min liquidity: 6154.027407604
+2025-07-11 05:20:34,815 - scanner_solana - INFO - Token nL43agfrgjMUYXRosM2Lmjxns4W41at9uVTKAeCpump doesn't meet min liquidity: 7769.054043448
+2025-07-11 05:20:55,206 - scanner_solana - INFO - Fetched Helius data for token: J7gaM1P2fVpivP9sRpyno8j6SGwUSffTADnWFQvqpump
+2025-07-11 05:20:55,207 - scanner_solana - INFO - Sending enhanced alert for token: J7gaM1P2fVpivP9sRpyno8j6SGwUSffTADnWFQvqpump
+2025-07-11 05:20:58,453 - scanner_solana - INFO - Token HMn9Vj8PgJyqJhFNFW8NrrXJPkiLiTdbqcH1VxMhpump doesn't meet mcap range: 53842.0
+2025-07-11 05:20:58,453 - scanner_solana - INFO - Token GDT8vmX4ccCaaCSBMzX49ErEwHwAXh9ke1VL8oPXpump doesn't meet mcap range: 18357.644665300173
+2025-07-11 05:20:58,454 - scanner_solana - INFO - Token 225EGYN5zqdRfcghS38c4WgVoZ5TArMtYFGK5Pvupump doesn't meet min liquidity: 9321.687785518
+2025-07-11 05:20:58,454 - scanner_solana - INFO - Token 5314GTpDziP2ZdaANnt5KJEABGXy5Nn5Kyc3SFPYpump doesn't meet mcap range: 39272.99862349309
+2025-07-11 05:20:58,454 - scanner_solana - INFO - Token AnoFE93NRBEe7vjABrjhX4BdcJLSdW8yCVwxRsQMpump doesn't meet min liquidity: 6130.873871188

@@ -1,0 +1,29 @@
+{
+  "address": "225wNcgj6QJamuRBLqTN9usLrfD2YuK1LTFwENHMpump",
+  "pool_address": "G365bv4dB1Txejgh2uEKtcBh1npQMfjieS1JkdBSLAoE",
+  "name": "Shrek Cock",
+  "symbol": "shrock",
+  "timestamp_alerted": 1752179970,
+  "top_holders": [
+    {
+      "address": "G365bv4dB1Txejgh2uEKtcBh1npQMfjieS1JkdBSLAoE",
+      "balance": 134698764.209686
+    },
+    {
+      "address": "EvagMUL8vuTRjokm6SPQVfCsMToWffvnvHZ6tTfRp1kP",
+      "balance": 27627397.028642
+    },
+    {
+      "address": "41dBomZfg6TKaoRrc9grvDbzqmPd9UGgpJEkXhtnHCLx",
+      "balance": 25943925.790017
+    },
+    {
+      "address": "2fYZb1gFBEZj1w33pSrE3qubxvKQCg6vQ9FiVLqgigUX",
+      "balance": 20191116.289077
+    },
+    {
+      "address": "ErQLt6vMuXx8qAqsW17PhkNxgfxg77RAf4xHtfbYSkUk",
+      "balance": 19590782.655321
+    }
+  ]
+}

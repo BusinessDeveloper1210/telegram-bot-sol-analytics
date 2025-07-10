@@ -1,0 +1,29 @@
+{
+  "address": "DLQeHdWviL7nPw8xnCepVCExpX94wkhGANT3a959pump",
+  "pool_address": "HR2e6nbYHzWqdmvJXbyMi7cUqMx5hdVyVDNM8nH51SLZ",
+  "name": "Butt Or Boobs",
+  "symbol": "BOB",
+  "timestamp_alerted": 1752182388,
+  "top_holders": [
+    {
+      "address": "HR2e6nbYHzWqdmvJXbyMi7cUqMx5hdVyVDNM8nH51SLZ",
+      "balance": 109719523.596131
+    },
+    {
+      "address": "SBPraDccWfrjzRrVgFKCp6iL55gkDjY5ybX4253CqwB",
+      "balance": 25448415.15851
+    },
+    {
+      "address": "2Pfkb1x2SH8q9qWt3fXi8WVGftW2xC8p5THtvXcQaStr",
+      "balance": 24645827.109746
+    },
+    {
+      "address": "3Bs5HZ14hmdY6VWuSijz2hHVMZBHHZwzG4yYGXMUai9F",
+      "balance": 22103625.060806
+    },
+    {
+      "address": "B7bA92Lcbwgk1DRRePkcYqAURgfbWXSwBYhiq6FVEezK",
+      "balance": 20186255.909176
+    }
+  ]
+}

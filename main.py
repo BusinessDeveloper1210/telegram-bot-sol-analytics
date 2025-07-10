@@ -22,6 +22,10 @@ def main():
         ("TG_SIGNALS_CHANNEL_ID", config.TG_SIGNALS_CHANNEL_ID)
     ]
     
+    # Check optional values
+    if not config.HELIUS_API_KEY:
+        print("⚠️  HELIUS_API_KEY not provided - enhanced token details will be limited")
+    
     missing_values = []
     for name, value in required_values:
         if not value:

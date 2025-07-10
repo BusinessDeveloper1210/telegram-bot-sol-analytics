@@ -5,7 +5,7 @@ from telebot import TeleBot
 import utils
 from dex_scanner import chart, tg_msg_templates
 from dex_scanner.data_types import SolanaChainParameterConfig
-from dex_scanner.external_clients import DexScreener, MoralisSolana
+from dex_scanner.external_clients import DexScreener, MoralisSolana, HeliusAPI
 from dex_scanner.logger import Logger
 from dex_scanner.scan_responses import HandlePoolResponse
 
@@ -25,6 +25,11 @@ class SolanaScanner:
         )
         self.moralis = MoralisSolana(self.chain_config.MORALIS_API_KEY)
         self.dex_screener = DexScreener(self.chain_config.CHAIN_ID_BY_NAME)
+        
+        # Initialize Helius API if key is provided
+        self.helius = None
+        if self.chain_config.HELIUS_API_KEY:
+            self.helius = HeliusAPI(self.chain_config.HELIUS_API_KEY)
 
         _chain_parameter_config = utils.load_chain_parameter_config(
             self.chain_config.REFERENCE_NAME
@@ -171,8 +176,24 @@ class SolanaScanner:
             self.logger.error(f"DexScreener for pool {pool_address} failed due to: {e}")
             links = []
 
-        # Send Alert
-        self.logger.info(f"Sending alert for token: {token_address}")
+        # Fetch enhanced token details from Helius if available
+        helius_data = None
+        if self.helius:
+            try:
+                helius_data = self.helius.get_enhanced_token_details(token_address)
+                self.logger.info(f"Fetched Helius data for token: {token_address}")
+            except Exception as e:
+                self.logger.error(f"Failed to fetch Helius data for token {token_address}: {e}")
+
+        # Prepare Moralis data for enhanced display
+        moralis_data = {
+            "token_analytics": token_analytics,
+            "holder_stats": token_holder_stats,
+            "token_metadata": token_metadata
+        }
+
+        # Send Enhanced Alert
+        self.logger.info(f"Sending enhanced alert for token: {token_address}")
         self._send_alert(
             token_name=token_metadata["name"],
             token_symbol=token_metadata["symbol"],
@@ -189,6 +210,8 @@ class SolanaScanner:
             dexes=dexes,
             candlestick_data=candlestick_data,
             links=links,
+            moralis_data=moralis_data,
+            helius_data=helius_data,
         )
 
         self._add_token_to_ignore(
@@ -248,6 +271,8 @@ class SolanaScanner:
         dexes: list[str],
         candlestick_data: list[dict],
         links: list[dict],
+        moralis_data: dict | None = None,
+        helius_data: dict | None = None,
     ) -> None:
         # Send Alert Token Info Message
         text = tg_msg_templates.alert_message_solana_text(
@@ -265,6 +290,8 @@ class SolanaScanner:
             avg_trades_per_hour=avg_trades_per_hour,
             dexes=dexes,
             links=links,
+            moralis_data=moralis_data,
+            helius_data=helius_data,
         )
         chart_path = os.path.join(
             self.chain_config.TEMP_DIR,
@@ -291,6 +318,8 @@ class SolanaScanner:
             self.chain_config.TG_SIGNALS_CHANNEL_ID,
             tg_msg_templates.tx_analysis_solana_text(tx_analysis),
         )
+
+
 
     def _store_alerted_token_data(
         self,

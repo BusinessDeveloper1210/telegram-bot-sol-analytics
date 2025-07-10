@@ -17,6 +17,7 @@ A comprehensive Solana token scanner that monitors recently graduated tokens on 
 - Moralis API key
 - Telegram Bot Token
 - Telegram Channel ID
+- Helius API key (optional, for enhanced token details)
 
 ## Installation
 
@@ -36,6 +37,7 @@ A comprehensive Solana token scanner that monitors recently graduated tokens on 
    export MORALIS_API_KEY="your_moralis_api_key"
    export TG_BOT_TOKEN="your_telegram_bot_token"
    export TG_SIGNALS_CHANNEL_ID="your_telegram_channel_id"
+   export HELIUS_API_KEY="your_helius_api_key"  # Optional, for enhanced token details
    ```
 
 ## Configuration
@@ -67,6 +69,16 @@ The scanner uses a configuration system with the following parameters:
 python main.py
 ```
 
+### Testing Enhanced Token Details
+
+To test the enhanced token details functionality:
+
+```bash
+python test_enhanced_details.py
+```
+
+This will demonstrate the enhanced token details format and verify API connectivity.
+
 ### Manual Execution
 
 ```python
@@ -92,12 +104,36 @@ The scanner evaluates tokens based on the following criteria:
 ## Alert Format
 
 Alerts include:
+- **Enhanced Token Details**: Comprehensive token information with structured layout
 - Token basic information (name, symbol, price, market cap)
 - Holder statistics
 - Trading activity metrics
 - Candlestick chart with volume
 - Transaction analysis breakdown
 - Trading links
+
+### Enhanced Token Details Format
+
+The scanner now provides enhanced token details in a structured format:
+
+```
+📋 Token Details
+├ Chain: SOL
+├ Name: TokenName
+├ Symbol: SYMBOL
+├ Total Supply: 1,000,000
+├ Token Age: 388d 21h 31m
+├ Holders: 679
+├ MCap: $388K
+├ Liquidity: $70.4K
+├ Liq/Mcap Ratio: 18.13%
+└ Dexes: UniswapV2, PumpSwap
+```
+
+This enhanced format includes:
+- **Moralis Data**: 24H volume, buy/sell volumes, holder statistics
+- **Helius Data**: On-chain token age, metadata verification
+- **Real-time Values**: All values are fetched from APIs, not static
 
 ## File Structure
 
@@ -133,6 +169,12 @@ solana-scanner/
 - Holder statistics
 - Candlestick data
 - Token pairs
+
+### Helius API
+- Enhanced token metadata
+- Token age calculation
+- On-chain data verification
+- Token supply information
 
 ### DexScreener API
 - Trading links

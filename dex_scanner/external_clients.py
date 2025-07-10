@@ -31,6 +31,114 @@ class DexScreener:
             return []
 
 
+class HeliusAPI:
+    """Helius API client for enhanced token data."""
+    
+    def __init__(self, api_key: str) -> None:
+        self.api_key = api_key
+        self.base_url = f"https://mainnet.helius-rpc.com/?api-key={api_key}"
+        self.max_retries = 3
+
+    def _make_rpc_call(self, method: str, params: List[Any]) -> Any:
+        """Make RPC call to Helius API."""
+        retry = 0
+        while True:
+            try:
+                payload = {
+                    "jsonrpc": "2.0",
+                    "id": 1,
+                    "method": method,
+                    "params": params
+                }
+                response = requests.post(self.base_url, json=payload, timeout=30)
+                response.raise_for_status()
+                result = response.json()
+                
+                if "error" in result:
+                    raise Exception(f"RPC Error: {result['error']}")
+                
+                return result.get("result", {})
+            except Exception as e:
+                retry += 1
+                if retry > self.max_retries:
+                    raise e
+                time.sleep(2**retry)
+
+    def get_token_metadata(self, token_address: str) -> Dict[str, Any]:
+        """Get comprehensive token metadata."""
+        try:
+            # Get token metadata
+            metadata = self._make_rpc_call("getTokenMetadata", [token_address])
+            
+            # Get token supply
+            supply = self._make_rpc_call("getTokenSupply", [token_address])
+            
+            # Get token largest accounts (holders info)
+            largest_accounts = self._make_rpc_call("getTokenLargestAccounts", [token_address])
+            
+            # Get account info for additional details
+            account_info = self._make_rpc_call("getAccountInfo", [token_address, {"encoding": "jsonParsed"}])
+            
+            return {
+                "metadata": metadata,
+                "supply": supply,
+                "largest_accounts": largest_accounts,
+                "account_info": account_info
+            }
+        except Exception as e:
+            return {"error": str(e)}
+
+    def get_token_age(self, token_address: str) -> Dict[str, Any]:
+        """Get token age and creation information."""
+        try:
+            # Get signatures for address to find creation transaction
+            signatures = self._make_rpc_call("getSignaturesForAddress", [
+                token_address,
+                {"limit": 1000}
+            ])
+            
+            if isinstance(signatures, list) and signatures:
+                # Get the oldest transaction (likely creation)
+                oldest_sig = signatures[len(signatures) - 1]
+                creation_time = oldest_sig.get("blockTime", 0)
+                
+                if creation_time:
+                    creation_date = datetime.fromtimestamp(creation_time)
+                    now = datetime.now()
+                    age_delta = now - creation_date
+                    
+                    days = age_delta.days
+                    hours = age_delta.seconds // 3600
+                    minutes = (age_delta.seconds % 3600) // 60
+                    
+                    return {
+                        "creation_time": creation_time,
+                        "creation_date": creation_date.isoformat(),
+                        "age_days": days,
+                        "age_hours": hours,
+                        "age_minutes": minutes,
+                        "age_formatted": f"{days}d {hours}h {minutes}m"
+                    }
+            
+            return {"error": "Could not determine token age"}
+        except Exception as e:
+            return {"error": str(e)}
+
+    def get_enhanced_token_details(self, token_address: str) -> Dict[str, Any]:
+        """Get comprehensive token details combining multiple API calls."""
+        try:
+            metadata = self.get_token_metadata(token_address)
+            age_info = self.get_token_age(token_address)
+            
+            return {
+                "metadata": metadata,
+                "age_info": age_info,
+                "timestamp": datetime.now().isoformat()
+            }
+        except Exception as e:
+            return {"error": str(e)}
+
+
 class MoralisSolana:
     BASE_URL = "https://solana-gateway.moralis.io"
     NETWORK = "mainnet"

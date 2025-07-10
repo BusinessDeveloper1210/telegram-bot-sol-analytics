@@ -1,0 +1,29 @@
+{
+  "address": "DCUUQDK5DsaMqVNdF2vXnE3owzvfuoLvd4cvW8aTpump",
+  "pool_address": "4AXzZHwfvYJ63hEhX1Yzy1qFwbZfKGjEvuLhhFSwnJXB",
+  "name": "Bankcoin",
+  "symbol": "BANK",
+  "timestamp_alerted": 1752182379,
+  "top_holders": [
+    {
+      "address": "4AXzZHwfvYJ63hEhX1Yzy1qFwbZfKGjEvuLhhFSwnJXB",
+      "balance": 119201970.716573
+    },
+    {
+      "address": "FaueRBXr7chrqVGgVL6vyyrhwbwM3FDC7nqauEAyCuGi",
+      "balance": 33625236.438453
+    },
+    {
+      "address": "9TzmworQPWHRdqWBJr4qEJnaFVBNZdYC7X3v4sgNkTTN",
+      "balance": 29943235.62829
+    },
+    {
+      "address": "2PQhJHoxQBPjWHZaQRK5CDMdNQ5Tbuv2W3z9WhscGdno",
+      "balance": 25153599.047521
+    },
+    {
+      "address": "98LirbA5HFdy4QHLJbkR97YKija8fy9qXZQv62qC6Vip",
+      "balance": 24626162.18117
+    }
+  ]
+}
