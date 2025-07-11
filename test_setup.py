@@ -92,9 +92,9 @@ def test_scanner_creation():
         
         # Create config with test values
         config = SolanaConfig()
-        config.MORALIS_API_KEY = "test_key"
-        config.TG_BOT_TOKEN = "test_token"
-        config.TG_SIGNALS_CHANNEL_ID = "test_channel"
+        config.MORALIS_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImZhOTBhMmIxLTEyOGUtNGZkMS05NjMzLTFlOGFhODhkYTBlMCIsIm9yZ0lkIjoiNDUzNTA2IiwidXNlcklkIjoiNDY2NTk1IiwidHlwZUlkIjoiN2JlMDE3Y2EtZDk5Yy00YjMyLWJjOTEtMDhiYWUyNmUzZTNhIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3NDk3MDM2NzksImV4cCI6NDkwNTQ2MzY3OX0.01A0xGL-upQUDtu37GrsO1_jEMJ9c2rpGgBOM628fDA"
+        config.TG_BOT_TOKEN = "7068725354:AAGkDVanKkglVoXIcZofDeQLKCfhxve275g"
+        config.TG_SIGNALS_CHANNEL_ID = "-1002803549988"
         
         # Create scanner
         scanner = SolanaScanner(config)

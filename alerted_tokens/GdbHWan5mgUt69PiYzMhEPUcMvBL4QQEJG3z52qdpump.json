@@ -1,0 +1,29 @@
+{
+  "address": "GdbHWan5mgUt69PiYzMhEPUcMvBL4QQEJG3z52qdpump",
+  "pool_address": "HxtMLZGnjLt72b72s1oudMeFBHVKrRnXUQjfB7uKo6LH",
+  "name": "Most Useless Coin",
+  "symbol": "MUC",
+  "timestamp_alerted": 1752248169,
+  "top_holders": [
+    {
+      "address": "HxtMLZGnjLt72b72s1oudMeFBHVKrRnXUQjfB7uKo6LH",
+      "balance": 125889318.105456
+    },
+    {
+      "address": "B1oyDVNkFRStwfisSWrNXQNC5wwGUxHQxDnWTsZ1F2iT",
+      "balance": 17212287.950826
+    },
+    {
+      "address": "CJh1LiA5U31JT7oWtKhFZinmzi7gf3Lzbws1SD8b8Qty",
+      "balance": 17212287.950826
+    },
+    {
+      "address": "BAS9Ny6ZmEWyrtrpgHas3U5XHaSN3gNmEkMexEP6ijw8",
+      "balance": 15160864.919124
+    },
+    {
+      "address": "2eFA1CcHefeGvzKz3wQJqd4T2mdkjAAYAXtzJVQLbyAS",
+      "balance": 12591435.687139
+    }
+  ]
+}

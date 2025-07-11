@@ -274,6 +274,23 @@ class SolanaScanner:
         moralis_data: dict | None = None,
         helius_data: dict | None = None,
     ) -> None:
+        if not candlestick_data:
+            reason = "unknown"
+            if not pool_address:
+                reason = "no pool address (token may not be listed yet)"
+            elif helius_data and "age_info" in helius_data and "age_seconds" in helius_data["age_info"]:
+                age_seconds = helius_data["age_info"]["age_seconds"]
+                if age_seconds < 3600:  # less than 1 hour old
+                    reason = f"token is too new (age: {age_seconds//60} min)"
+                else:
+                    reason = "token may have no trading history yet"
+            else:
+                reason = "no candlestick data returned (API issue or no trades yet)"
+            self.logger.warning(
+                f"Skipping alert for token {token_address} ({token_symbol}): candlestick_data is empty. Reason: {reason}"
+            )
+            return
+
         # Send Alert Token Info Message
         text = tg_msg_templates.alert_message_solana_text(
             chain_reference_name=self.chain_config.REFERENCE_NAME,
