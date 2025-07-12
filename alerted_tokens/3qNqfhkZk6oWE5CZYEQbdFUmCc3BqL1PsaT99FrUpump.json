@@ -1,0 +1,29 @@
+{
+  "address": "3qNqfhkZk6oWE5CZYEQbdFUmCc3BqL1PsaT99FrUpump",
+  "pool_address": "HD9Ww6Xc7sSGeibZEyvzd8q3djuDzycKvV2goyVMb73o",
+  "name": "Patty IceStream",
+  "symbol": "ICE",
+  "timestamp_alerted": 1752257487,
+  "top_holders": [
+    {
+      "address": "HD9Ww6Xc7sSGeibZEyvzd8q3djuDzycKvV2goyVMb73o",
+      "balance": 94031152.642407
+    },
+    {
+      "address": "6trrrMhNUvfH6RC5dSjUyfUerfHe5CVTCncgBrceb1f2",
+      "balance": 32366733.722283
+    },
+    {
+      "address": "aesnQr5FrNQePXeaPV2TJ7ivmvDLW1oXMaDhxB46Cst",
+      "balance": 25183669.832744
+    },
+    {
+      "address": "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5",
+      "balance": 19404134.454529
+    },
+    {
+      "address": "6kbwsSY4hL6WVadLRLnWV2irkMN2AvFZVAS8McKJmAtJ",
+      "balance": 15439034.497812
+    }
+  ]
+}

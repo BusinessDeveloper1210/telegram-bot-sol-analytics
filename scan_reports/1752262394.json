@@ -1,0 +1,7 @@
+{
+  "MIN_LIQUIDITY": 64,
+  "ERROR": 8,
+  "MCAP_RANGE": 19,
+  "NO_BUY_OUTLIER": 7,
+  "TOP_5_HOLDERS_ABOVE_TH": 2
+}

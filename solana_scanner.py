@@ -5,7 +5,7 @@ from telebot import TeleBot
 import utils
 from dex_scanner import chart, tg_msg_templates
 from dex_scanner.data_types import SolanaChainParameterConfig
-from dex_scanner.external_clients import DexScreener, MoralisSolana, HeliusAPI
+from dex_scanner.external_clients import DexScreener, MoralisSolana, HeliusAPI, analyze_token_activity
 from dex_scanner.logger import Logger
 from dex_scanner.scan_responses import HandlePoolResponse
 
@@ -66,17 +66,25 @@ class SolanaScanner:
             return HandlePoolResponse.IGNORABLE
 
         # Check min liquidity requirement
+        liquidity_val = token_data.get("liquidity")
+        if liquidity_val is None:
+            self.logger.warning(f"Token {token_address} missing liquidity, skipping.")
+            return HandlePoolResponse.ERROR
         if (
-            float(token_data["liquidity"])
+            float(liquidity_val)
             < self.chain_parameter_config.min_liquidity_in_usd
         ):
             self.logger.info(
-                f"Token {token_address} doesn't meet min liquidity: {token_data['liquidity']}"
+                f"Token {token_address} doesn't meet min liquidity: {liquidity_val}"
             )
             return HandlePoolResponse.MIN_LIQUIDITY
 
         # Check market cap range requirement
-        mcap_usd = float(token_data["fullyDilutedValuation"])
+        mcap_val = token_data.get("fullyDilutedValuation")
+        if mcap_val is None:
+            self.logger.warning(f"Token {token_address} missing fullyDilutedValuation, skipping.")
+            return HandlePoolResponse.ERROR
+        mcap_usd = float(mcap_val)
         if (
             mcap_usd < self.chain_parameter_config.min_mcap_in_usd
             or mcap_usd > self.chain_parameter_config.max_mcap_in_usd
@@ -125,6 +133,9 @@ class SolanaScanner:
         # Get token analytics
         token_analytics = self.moralis.get_token_analytics(token_address)
 
+        # Get first time vs repeat buyers data
+        buyer_analysis = self.moralis.get_first_time_vs_repeat_buyers(token_address)
+
         # Verify 24H usd Volume
         _24h_usd_volume = (
             token_analytics["totalBuyVolume"]["24h"]
@@ -160,10 +171,14 @@ class SolanaScanner:
                 pool_address = pair["pairAddress"]
                 break
         dexes = ["PumpSwap"]
+        price_val = token_data.get("priceUsd")
+        if price_val is None:
+            self.logger.warning(f"Token {token_address} missing priceUsd, skipping.")
+            return HandlePoolResponse.ERROR
         net_token_flow = (
             token_analytics["totalBuyVolume"]["24h"]
             - token_analytics["totalSellVolume"]["24h"]
-        ) / float(token_data["priceUsd"])
+        ) / float(price_val)
         avg_trades_per_hour = (
             token_analytics["totalBuys"]["24h"] + token_analytics["totalSells"]["24h"]
         ) / 24
@@ -189,7 +204,8 @@ class SolanaScanner:
         moralis_data = {
             "token_analytics": token_analytics,
             "holder_stats": token_holder_stats,
-            "token_metadata": token_metadata
+            "token_metadata": token_metadata,
+            "buyer_analysis": buyer_analysis
         }
 
         # Send Enhanced Alert
@@ -212,6 +228,7 @@ class SolanaScanner:
             links=links,
             moralis_data=moralis_data,
             helius_data=helius_data,
+            buyer_analysis=buyer_analysis,
         )
 
         self._add_token_to_ignore(
@@ -230,28 +247,70 @@ class SolanaScanner:
         return HandlePoolResponse.PASSED
 
     def _get_tx_analysis(self, token_analytics: dict) -> dict:
-        tws = ["5M", "1H", "6H", "24H"]
+        # Use only available timeframes from the API response
+        available_tws = list(token_analytics["totalBuyVolume"].keys())
+        # Map available timeframes to display names
+        tw_mapping = {
+            "5m": "5M",
+            "1h": "1H", 
+            "6h": "6H",
+            "24h": "24H"
+        }
+        
         analysis = {}
-        for tw in tws:
-            _tw_lower = tw.lower()
-            analysis[tw] = {
-                "buy": {
-                    "avg": token_analytics["totalBuyVolume"][_tw_lower]
-                    / token_analytics["totalBuyers"][_tw_lower]
-                    if token_analytics["totalBuyers"][_tw_lower] > 0
-                    else token_analytics["totalBuyVolume"][_tw_lower],
-                    "txs": token_analytics["totalBuys"][_tw_lower],
-                    "wallets": token_analytics["totalBuyers"][_tw_lower],
-                },
-                "sell": {
-                    "avg": token_analytics["totalSellVolume"][_tw_lower]
-                    / token_analytics["totalSellers"][_tw_lower]
-                    if token_analytics["totalSellers"][_tw_lower] > 0
-                    else token_analytics["totalSellVolume"][_tw_lower],
-                    "txs": token_analytics["totalSells"][_tw_lower],
-                    "wallets": token_analytics["totalSellers"][_tw_lower],
-                },
-            }
+        for tw_lower in available_tws:
+            if tw_lower in tw_mapping:
+                tw = tw_mapping[tw_lower]
+                
+                # Calculate buy data
+                buy_volume = token_analytics["totalBuyVolume"][tw_lower]
+                buy_buyers = token_analytics["totalBuyers"][tw_lower]
+                buy_avg = buy_volume / buy_buyers if buy_buyers > 0 else buy_volume
+                
+                # Calculate sell data
+                sell_volume = token_analytics["totalSellVolume"][tw_lower]
+                sell_sellers = token_analytics["totalSellers"][tw_lower]
+                sell_avg = sell_volume / sell_sellers if sell_sellers > 0 else sell_volume
+                
+                # Calculate outlier and stdev for buy data
+                buy_outlier = "N/A"
+                buy_stdev = "N/A"
+                if tw == "1H" and buy_volume > 0:
+                    # Use the same outlier calculation logic as in the main analysis
+                    h1_threshold = (
+                        token_analytics["totalBuyVolume"]["24h"]
+                        * self.chain_parameter_config.std_multiple_for_outlier
+                    ) / 24
+                    buy_outlier = f"${buy_volume:.2f}"
+                    buy_stdev = f"${h1_threshold:.2f}"
+                elif buy_volume > 0:
+                    # For other timeframes, calculate a simple outlier based on volume
+                    buy_outlier = f"${buy_volume:.2f}"
+                    buy_stdev = f"${buy_avg:.2f}"
+                
+                # Calculate outlier and stdev for sell data
+                sell_outlier = "N/A"
+                sell_stdev = "N/A"
+                if sell_volume > 0:
+                    sell_outlier = f"${sell_volume:.2f}"
+                    sell_stdev = f"${sell_avg:.2f}"
+                
+                analysis[tw] = {
+                    "buy": {
+                        "avg": f"${buy_avg:.2f}",
+                        "txs": token_analytics["totalBuys"][tw_lower],
+                        "wallets": token_analytics["totalBuyers"][tw_lower],
+                        "outlier": buy_outlier,
+                        "stdev": buy_stdev,
+                    },
+                    "sell": {
+                        "avg": f"${sell_avg:.2f}",
+                        "txs": token_analytics["totalSells"][tw_lower],
+                        "wallets": token_analytics["totalSellers"][tw_lower],
+                        "outlier": sell_outlier,
+                        "stdev": sell_stdev,
+                    },
+                }
         return analysis
 
     def _send_alert(
@@ -273,6 +332,7 @@ class SolanaScanner:
         links: list[dict],
         moralis_data: dict | None = None,
         helius_data: dict | None = None,
+        buyer_analysis: dict | None = None,
     ) -> None:
         if not candlestick_data:
             reason = "unknown"
@@ -317,7 +377,7 @@ class SolanaScanner:
         hours = (
             candlestick_data[-1]["timestamp"] - candlestick_data[0]["timestamp"]
         ) / 3600
-        chart_title = f"Price Chart for {token_symbol} <b>(Last {hours:.1f}H)</b>"
+        chart_title = f"Price Chart for {token_symbol} Last {hours:.1f}Hours"
         chart.create_candlestick_chart(
             chart_title,
             chart_path,
@@ -329,12 +389,57 @@ class SolanaScanner:
                 image,
                 text,
             )
-
         # Send TX Analysis message
         self.tg_bot.send_message(
             self.chain_config.TG_SIGNALS_CHANNEL_ID,
-            tg_msg_templates.tx_analysis_solana_text(tx_analysis),
+            tg_msg_templates.detailed_tx_analysis_solana_text(tx_analysis),
         )
+
+        # Send static Smart Money message
+        if self.helius:
+            try:
+                now = int(time.time())
+                windows = {
+                    "15M": (now - 15*60, now),
+                    "1H": (now - 60*60, now),
+                    "2H": (now - 2*60*60, now),
+                    "6H": (now - 6*60*60, now),
+                    "3D": (now - 3*24*60*60, now),
+                    "14D": (now - 14*24*60*60, now),
+                }
+                transfers = self.helius.get_token_transfers(token_address, now - 14*24*60*60, now)
+                if transfers:
+                    first_repeat, smart_money = analyze_token_activity(transfers, windows)
+                    self.tg_bot.send_message(
+                        self.chain_config.TG_SIGNALS_CHANNEL_ID,
+                        tg_msg_templates.static_smart_money_message(first_repeat=first_repeat, smart_money=smart_money),
+                    )
+                else:
+                    # Send fallback message when no transfer data is available
+                    self.tg_bot.send_message(
+                        self.chain_config.TG_SIGNALS_CHANNEL_ID,
+                        tg_msg_templates.static_smart_money_message(),
+                    )
+            except Exception as e:
+                self.logger.error(f"Failed to get smart money data for token {token_address}: {e}")
+                # Send fallback message on error
+                self.tg_bot.send_message(
+                    self.chain_config.TG_SIGNALS_CHANNEL_ID,
+                    tg_msg_templates.static_smart_money_message(),
+                )
+        else:
+            self.tg_bot.send_message(
+                self.chain_config.TG_SIGNALS_CHANNEL_ID,
+                tg_msg_templates.static_smart_money_message(),
+            )
+
+        # Send dynamic Crypto Signals message with first time vs repeat buyers
+        self.tg_bot.send_message(
+            self.chain_config.TG_SIGNALS_CHANNEL_ID,
+            tg_msg_templates.dynamic_crypto_signals_message(buyer_analysis or {}),
+        )
+
+
 
 
 

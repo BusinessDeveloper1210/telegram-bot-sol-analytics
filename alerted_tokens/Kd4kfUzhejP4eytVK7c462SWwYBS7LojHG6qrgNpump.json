@@ -1,0 +1,29 @@
+{
+  "address": "Kd4kfUzhejP4eytVK7c462SWwYBS7LojHG6qrgNpump",
+  "pool_address": "3k4ARciWqPQTmTMWFTcarBQU8xLLH6vy1f3Q8zdBFv7X",
+  "name": "Bieber Official",
+  "symbol": "lilb",
+  "timestamp_alerted": 1752268480,
+  "top_holders": [
+    {
+      "address": "3k4ARciWqPQTmTMWFTcarBQU8xLLH6vy1f3Q8zdBFv7X",
+      "balance": 150105021.211682
+    },
+    {
+      "address": "85ftJkg4PNcxytoztFAk7H4EiR1vUEGPY81F2qYU5goo",
+      "balance": 100000010.0
+    },
+    {
+      "address": "9C47KgB3P8WpGgeV8pr3T3HBaBjiZANdpuaZ8FguorRo",
+      "balance": 30078735.451614
+    },
+    {
+      "address": "6c6WZBVkxiLU3idXcUQ1tkz3Cc6Npw47mrELWRpTvXUy",
+      "balance": 29162800.73411
+    },
+    {
+      "address": "5pJUnWjnHV7z3PhmUNHq3Jc7EsjeQWa6qDLr43URL8T3",
+      "balance": 29083909.632761
+    }
+  ]
+}

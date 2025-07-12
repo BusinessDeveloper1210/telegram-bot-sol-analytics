@@ -1,0 +1,29 @@
+{
+  "address": "BfGSxwFn87f3EDmfachriif8ZEaP5oqgA23u6HMxpump",
+  "pool_address": "AF26jh6y77bbTQNBebXHk68vQHdjjTwSW6KE8o9Xo6rb",
+  "name": "not. good.",
+  "symbol": "review",
+  "timestamp_alerted": 1752282182,
+  "top_holders": [
+    {
+      "address": "AF26jh6y77bbTQNBebXHk68vQHdjjTwSW6KE8o9Xo6rb",
+      "balance": 135048650.861868
+    },
+    {
+      "address": "6x8X8PBE3BW3xCFQe4v8JTJCWjYNiiMjLmmZc78xEMSU",
+      "balance": 62270892.498299
+    },
+    {
+      "address": "ApRnQN2HkbCn7W2WWiT2FEKvuKJp9LugRyAE1a9Hdz1",
+      "balance": 39602863.607082
+    },
+    {
+      "address": "FdAxK5PRcDdHSJkPy3xDJkjmdvVZDymXr8yYLkBtD85e",
+      "balance": 35845039.748329
+    },
+    {
+      "address": "8XHa2WEvdaJaUMFbzi1H8GYyKWPiYQKoLHsG9kz9XJ5o",
+      "balance": 35393680.791955
+    }
+  ]
+}

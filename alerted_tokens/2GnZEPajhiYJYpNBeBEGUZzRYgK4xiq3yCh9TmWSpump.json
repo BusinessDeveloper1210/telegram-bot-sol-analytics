@@ -1,0 +1,29 @@
+{
+  "address": "2GnZEPajhiYJYpNBeBEGUZzRYgK4xiq3yCh9TmWSpump",
+  "pool_address": "ErPAefdtbXNZUqffwSx8A76GNhXv8bsvVzPUjRSbVGnY",
+  "name": "Calm",
+  "symbol": "Calm",
+  "timestamp_alerted": 1752266014,
+  "top_holders": [
+    {
+      "address": "ErPAefdtbXNZUqffwSx8A76GNhXv8bsvVzPUjRSbVGnY",
+      "balance": 165241027.526771
+    },
+    {
+      "address": "AHPbYfWjk5xZtgnh5ZvSiHSCvuEWYAoh2rj5xTWTLNY8",
+      "balance": 33306382.351092
+    },
+    {
+      "address": "57bJ61GoLLov6pr34UJqi9wxeMZSsfFB9JR1K4CBJAQ9",
+      "balance": 20892441.322733
+    },
+    {
+      "address": "UvsXNihusMGgQKUYKwYXUwXxd77xM3wXVybRmchgMcC",
+      "balance": 20631288.586689
+    },
+    {
+      "address": "suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK",
+      "balance": 19605847.465692
+    }
+  ]
+}

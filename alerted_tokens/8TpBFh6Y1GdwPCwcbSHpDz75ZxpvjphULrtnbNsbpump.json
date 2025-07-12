@@ -1,0 +1,29 @@
+{
+  "address": "8TpBFh6Y1GdwPCwcbSHpDz75ZxpvjphULrtnbNsbpump",
+  "pool_address": "6CNiPAHvDgnMLYaCCw1Yv7R5dB2ap4jKYDanryU2s3mf",
+  "name": "GOODTEK",
+  "symbol": "GOODTEK",
+  "timestamp_alerted": 1752282182,
+  "top_holders": [
+    {
+      "address": "6CNiPAHvDgnMLYaCCw1Yv7R5dB2ap4jKYDanryU2s3mf",
+      "balance": 169524791.097674
+    },
+    {
+      "address": "ETufpf5iPZ7w8dUXGBvDg8zBftwpZkqzVximJ8wULFHU",
+      "balance": 30151850.845673
+    },
+    {
+      "address": "UFKeWPbq6U65YkpKp5JzneQzaL2GntgGAii8veVvbrH",
+      "balance": 27368836.301798
+    },
+    {
+      "address": "ACrhS2x8Hnzt1nFdRz7v5jw3QYghRLCKSXHJYB7wXPnd",
+      "balance": 23858452.205442
+    },
+    {
+      "address": "8yJFWmVTQq69p6VJxGwpzW7ii7c5J9GRAtHCNMMQPydj",
+      "balance": 23049383.526789
+    }
+  ]
+}

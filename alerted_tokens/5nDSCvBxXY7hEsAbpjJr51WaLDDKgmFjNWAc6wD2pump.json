@@ -1,0 +1,29 @@
+{
+  "address": "5nDSCvBxXY7hEsAbpjJr51WaLDDKgmFjNWAc6wD2pump",
+  "pool_address": "HyBKh8EDYERXsVJAtaSv2n4XV5XpQTRryu5JZJNArGWg",
+  "name": "Millionaire Out Of Nowhere",
+  "symbol": "MOON",
+  "timestamp_alerted": 1752360303,
+  "top_holders": [
+    {
+      "address": "HyBKh8EDYERXsVJAtaSv2n4XV5XpQTRryu5JZJNArGWg",
+      "balance": 236538441.497624
+    },
+    {
+      "address": "EMrLjtHGrKpbWFfLeQdFJidbyqw5NsoLXfRTWB8co1G3",
+      "balance": 34366501.373964
+    },
+    {
+      "address": "3ngvm4HqcA5qGXPkm3TNwuvfncFmt3UWAPhai2qazxYe",
+      "balance": 27430252.262299
+    },
+    {
+      "address": "C65D85MyV4taGmrrdgdB778w5sVY4nFr5QyWT5v26pxP",
+      "balance": 26196695.402426
+    },
+    {
+      "address": "A19BK4iJ7T9oXcR3e434B1EgpY7ENK171S4Lu6ZbcgFk",
+      "balance": 25564292.739931
+    }
+  ]
+}

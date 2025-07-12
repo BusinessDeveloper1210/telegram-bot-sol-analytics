@@ -1,0 +1,29 @@
+{
+  "address": "7XyamCtMKmY1ddZ1EQ8SNdwpHzqQijXaQrCCrpHFpump",
+  "pool_address": "hmY2314LScxAYv8RrJqMoCE9u4mUrCcddayHbcXAC4f",
+  "name": "pil",
+  "symbol": "pil",
+  "timestamp_alerted": 1752334622,
+  "top_holders": [
+    {
+      "address": "hmY2314LScxAYv8RrJqMoCE9u4mUrCcddayHbcXAC4f",
+      "balance": 172631206.773101
+    },
+    {
+      "address": "2ZwVxgEQCfNgM26QR3uoyAQ2rugngsCrHkahSKtSRvgV",
+      "balance": 26049167.431156
+    },
+    {
+      "address": "F6RSQ94TCpYbmRQPQKd73UNzNhJTrr96BRnZdsxJf7BV",
+      "balance": 25701284.898333
+    },
+    {
+      "address": "EN6JAzxMubntmFhq4DsCuijtWdGku14CZVEo33XhKScA",
+      "balance": 21554355.234582
+    },
+    {
+      "address": "7S2w8dJgF3sgosTxgkrs7jBLoe3Rv7KLgpUzHyvGhdn7",
+      "balance": 19529108.131842
+    }
+  ]
+}

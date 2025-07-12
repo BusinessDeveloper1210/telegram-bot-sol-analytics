@@ -1,0 +1,29 @@
+{
+  "address": "439XmmPGDUERn7xRc1mrpyV5EgKC335vrT5DpeNGpump",
+  "pool_address": "DN2SobPx3wrERa8ZhGR9xnRvkzDSCmADErKWtieDXkoV",
+  "name": "pamp",
+  "symbol": "pamp",
+  "timestamp_alerted": 1752331412,
+  "top_holders": [
+    {
+      "address": "DN2SobPx3wrERa8ZhGR9xnRvkzDSCmADErKWtieDXkoV",
+      "balance": 132022041.768249
+    },
+    {
+      "address": "FQMtJYU84trsG5tcx7cF9CWGazuhMVAxKBHhtRwt9kYj",
+      "balance": 16026989.274484
+    },
+    {
+      "address": "3gguiJiTngbuiFJwPGHhm7oFkzQZ3Uprp6hrpRU4vQP8",
+      "balance": 15931310.921594
+    },
+    {
+      "address": "HRHNGJnSEbwjjZhpNbuidGxdFT7KgkKNofPRL332V57y",
+      "balance": 15838733.614312
+    },
+    {
+      "address": "7fqdKVu56sZTjLViWtKuifMzn13bBiNfmY9cpZyhN6Zz",
+      "balance": 15501022.795724
+    }
+  ]
+}

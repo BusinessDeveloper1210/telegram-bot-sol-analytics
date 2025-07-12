@@ -1,0 +1,29 @@
+{
+  "address": "7npuD1FtaZ7EXK8hxSCaqyrPZV8NPfPFXVdHxdNJpump",
+  "pool_address": "47uaV2pJpBfU1MEyFEqrKK87a69rPspfH4bvFgmHXrtQ",
+  "name": "DUMP.RUN",
+  "symbol": "DUMP",
+  "timestamp_alerted": 1752257885,
+  "top_holders": [
+    {
+      "address": "47uaV2pJpBfU1MEyFEqrKK87a69rPspfH4bvFgmHXrtQ",
+      "balance": 77044476.157878
+    },
+    {
+      "address": "CgxT3SUXi8E5mhuieoLH5Y47Uq4im6riMGqLp5EKU9UW",
+      "balance": 75369392.818593
+    },
+    {
+      "address": "DowdaHhANfbizafx1meqr7E2tzJ3Xs2gN6ckHgTj93DS",
+      "balance": 18864441.534818
+    },
+    {
+      "address": "tYxBQcJCYRPrgN1erbHvX2vqZPVYxEKRBWcPhg3WehW",
+      "balance": 11004485.159438
+    },
+    {
+      "address": "3ZXQw7Da3Q3xwZpJx3VTGm27UHEvpHwXJyPQqcRTfGpK",
+      "balance": 8476763.14946
+    }
+  ]
+}

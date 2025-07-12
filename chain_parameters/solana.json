@@ -1,6 +1,6 @@
 {
-  "min_liquidity_in_usd": 10000,
-  "min_mcap_in_usd": 100000,
+  "min_liquidity_in_usd": 1000,
+  "min_mcap_in_usd": 10000,
   "max_mcap_in_usd": 10000000,
   "max_holding_percentage_top_5_holders": 50.0,
   "min_holder_count": 100,

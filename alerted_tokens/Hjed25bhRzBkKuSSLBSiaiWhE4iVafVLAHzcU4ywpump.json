@@ -1,0 +1,29 @@
+{
+  "address": "Hjed25bhRzBkKuSSLBSiaiWhE4iVafVLAHzcU4ywpump",
+  "pool_address": "3ZCwZ7fqi4WyzKLL8J8ZS28997V6VgVv2hVxUn33bMpj",
+  "name": "pilldog",
+  "symbol": "pilldog",
+  "timestamp_alerted": 1752360303,
+  "top_holders": [
+    {
+      "address": "3ZCwZ7fqi4WyzKLL8J8ZS28997V6VgVv2hVxUn33bMpj",
+      "balance": 330490838.194984
+    },
+    {
+      "address": "8pwzZhRgFfmwoDGCcdDpZcPUKDMywJxPAzHsaV3iVhEf",
+      "balance": 26754597.606085
+    },
+    {
+      "address": "BCJyAy8eTtYXxDb797986p6GYoEtSaTP8tVVn2G6MmYK",
+      "balance": 21711191.641125
+    },
+    {
+      "address": "9pGQn1eXkRgjc9me1o4yZXJ8YehLMnsKaJTHsqbkm7bM",
+      "balance": 20786711.019474
+    },
+    {
+      "address": "GeZDEH83seCnn7nmXexN2YZQAvjeb6oDMENpsK9J6daR",
+      "balance": 17740351.062378
+    }
+  ]
+}

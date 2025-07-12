@@ -1,0 +1,9 @@
+{
+  "MIN_24H_VOLUME": 1,
+  "IGNORABLE": 4,
+  "MCAP_RANGE": 16,
+  "MIN_LIQUIDITY": 63,
+  "ERROR": 7,
+  "NO_BUY_OUTLIER": 8,
+  "TOP_5_HOLDERS_ABOVE_TH": 1
+}

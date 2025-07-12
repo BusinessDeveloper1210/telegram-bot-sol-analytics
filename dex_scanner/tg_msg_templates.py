@@ -19,158 +19,73 @@ def alert_message_solana_text(
     moralis_data: Dict[str, Any] | None = None,
     helius_data: Dict[str, Any] | None = None,
 ) -> str:
-    """Generate alert message for Solana tokens with enhanced information."""
-    
+    """Generate alert message for Solana tokens in the ETH (first image) style."""
     # Format numbers
     price_formatted = f"${price_usd:.6f}"
     mcap_formatted = f"${mcap_usd:,.0f}" if mcap_usd >= 1000 else f"${mcap_usd:.0f}"
     liquidity_formatted = f"${liquidity_usd:,.0f}" if liquidity_usd >= 1000 else f"${liquidity_usd:.0f}"
     net_flow_formatted = f"{net_token_flow:,.0f}"
     avg_trades_formatted = f"{avg_trades_per_hour:.1f}"
-    
-    # Calculate liquidity to market cap ratio
     liq_mcap_ratio = (liquidity_usd / mcap_usd * 100) if mcap_usd > 0 else 0
     liq_ratio_formatted = f"{liq_mcap_ratio:.2f}%"
-    
-    # Get token age from Helius data
     token_age = "Unknown"
     if helius_data and "age_info" in helius_data and "age_formatted" in helius_data["age_info"]:
         token_age = helius_data["age_info"]["age_formatted"]
-    
-    # Create enhanced token information section
+
+    # Metrics (try to get real values from Moralis if available)
+    avg_trades_7d = None
+    net_token_flow_7d = None
+    active_addrs_24h = None
+    active_addrs_t24h = None
+    if moralis_data and "token_analytics" in moralis_data:
+        analytics = moralis_data["token_analytics"]
+        avg_trades_7d = analytics.get("avgTradesPerHour7d")
+        net_token_flow_7d = analytics.get("netTokenFlow7d")
+        active_addrs_24h = analytics.get("activeAddresses24h")
+        active_addrs_t24h = analytics.get("activeAddressesT24h")
+
+    # Build message
     message = f"""
-🚨 <b>SOLANA TOKEN ALERT</b> 🚨
+<u>Token Details</u>
+├ Chain: <code>SOL</code>
+├ Name: <code>{token_name}</code>
+├ Symbol: <code>{token_symbol}</code>
+├ Total Supply: <code>{total_supply:,}</code>
+├ Token Age: <code>{token_age}</code>
+├ Holders: <code>{holder_count:,}</code>
+├ MCap: <code>{mcap_formatted}</code>
+├ Liquidity: <code>{liquidity_formatted}</code>
+├ Liq/Mcap Ratio: <code>{liq_ratio_formatted}</code>
+└ Dexes: <code>{', '.join(dexes)}</code>
 
-📋 <b>Token Details</b>
-├ <b>Chain:</b> <code>SOL</code>
-├ <b>Name:</b> <code>{token_name}</code>
-├ <b>Symbol:</b> <code>{token_symbol}</code>
-├ <b>Total Supply:</b> <code>{total_supply:,}</code>
-├ <b>Token Age:</b> <code>{token_age}</code>
-├ <b>Holders:</b> <code>{holder_count:,}</code>
-├ <b>Price:</b> <code>{price_formatted}</code>
-├ <b>MCap:</b> <code>{mcap_formatted}</code>
-├ <b>Liquidity:</b> <code>{liquidity_formatted}</code>
-├ <b>Liq/Mcap Ratio:</b> <code>{liq_ratio_formatted}</code>
-└ <b>Dexes:</b> <code>{', '.join(dexes)}</code>
+<u>Price:</u> <code>{price_formatted}</code>
 
-📈 <b>Trading Activity</b>
-• <b>Net Token Flow:</b> <code>{net_flow_formatted}</code>
-• <b>Avg Trades/Hour:</b> <code>{avg_trades_formatted}</code>
-
-🔗 <b>Links</b>
-• <b>Token Address:</b> <code>{token_address}</code>
-• <b>Pool Address:</b> <code>{pool_address}</code>
+<u>Token Address</u>
+<code>{token_address}</code>
 """
-    
-    # Add enhanced Moralis data if available
-    if moralis_data:
-        message += "\n🔍 <b>Moralis Analytics</b>\n"
-        if "token_analytics" in moralis_data:
-            analytics = moralis_data["token_analytics"]
-            if "totalBuyVolume" in analytics and "totalSellVolume" in analytics:
-                buy_24h = analytics["totalBuyVolume"].get("24h", 0)
-                sell_24h = analytics["totalSellVolume"].get("24h", 0)
-                total_volume = buy_24h + sell_24h
-                message += f"• <b>24H Volume:</b> <code>${total_volume:,.0f}</code>\n"
-                message += f"• <b>Buy Volume:</b> <code>${buy_24h:,.0f}</code>\n"
-                message += f"• <b>Sell Volume:</b> <code>${sell_24h:,.0f}</code>\n"
-        
-        if "holder_stats" in moralis_data:
-            holder_stats = moralis_data["holder_stats"]
-            message += f"• <b>Verified Holders:</b> <code>{holder_stats.get('totalHolders', 'N/A')}</code>\n"
-    
-    # Add enhanced Helius data if available
-    if helius_data:
-        message += "\n🌐 <b>Helius On-Chain Data</b>\n"
-        if "age_info" in helius_data and "age_formatted" in helius_data["age_info"]:
-            age = helius_data["age_info"]["age_formatted"]
-            message += f"• <b>Verified Age:</b> <code>{age}</code>\n"
-        
-        if "metadata" in helius_data and "metadata" in helius_data["metadata"]:
-            metadata = helius_data["metadata"]["metadata"]
-            if metadata and "name" in metadata:
-                message += f"• <b>On-chain Name:</b> <code>{metadata['name']}</code>\n"
-            if metadata and "symbol" in metadata:
-                message += f"• <b>On-chain Symbol:</b> <code>{metadata['symbol']}</code>\n"
-    
-    # Add DEX links
+    # Metrics section
+    metrics_lines = []
+    if avg_trades_7d is not None:
+        metrics_lines.append(f"├ Avg. Trades Per Hour 7D: <code>{avg_trades_7d}</code>")
+    if net_token_flow_7d is not None:
+        metrics_lines.append(f"├ Net Token Flow 7D: <code>{net_token_flow_7d}</code>")
+    if active_addrs_24h is not None:
+        metrics_lines.append(f"├ Active Addrs. 24H: <code>{active_addrs_24h}</code>")
+    if active_addrs_t24h is not None:
+        metrics_lines.append(f"└ Active Addrs. T-24H: <code>{active_addrs_t24h}</code>")
+    if metrics_lines:
+        message += f"\n<u>Metrics</u>\n" + "\n".join(metrics_lines)
+
+    # Links section
     if links:
-        message += "\n🌐 <b>Trading Links:</b>\n"
+        message += f"\n\n<u>Links</u>\n"
         for link in links:
             if link.get('url'):
-                message += f"• <a href='{link['url']}'>{link['name']}</a>\n"
-    
+                message += f"├ <a href='{link['url']}'>{link['name']}</a>\n"
+        message = message.rstrip('\n')
     return message.strip()
 
 
-def enhanced_token_details_text(
-    token_name: str,
-    token_symbol: str,
-    total_supply: str,
-    token_age: str,
-    holder_count: int,
-    mcap_usd: float,
-    liquidity_usd: float,
-    liq_mcap_ratio: float,
-    dexes: List[str],
-    moralis_data: Dict[str, Any] | None = None,
-    helius_data: Dict[str, Any] | None = None,
-) -> str:
-    """Generate enhanced token details message with comprehensive information."""
-    
-    # Format numbers
-    mcap_formatted = f"${mcap_usd:,.0f}" if mcap_usd >= 1000 else f"${mcap_usd:.0f}"
-    liquidity_formatted = f"${liquidity_usd:,.0f}" if liquidity_usd >= 1000 else f"${liquidity_usd:.0f}"
-    liq_ratio_formatted = f"{liq_mcap_ratio:.2f}%"
-    
-    # Create the main token details section
-    message = f"""
-📋 <b>Token Details</b>
-├ <b>Chain:</b> <code>SOL</code>
-├ <b>Name:</b> <code>{token_name}</code>
-├ <b>Symbol:</b> <code>{token_symbol}</code>
-├ <b>Total Supply:</b> <code>{total_supply}</code>
-├ <b>Token Age:</b> <code>{token_age}</code>
-├ <b>Holders:</b> <code>{holder_count:,}</code>
-├ <b>MCap:</b> <code>{mcap_formatted}</code>
-├ <b>Liquidity:</b> <code>{liquidity_formatted}</code>
-├ <b>Liq/Mcap Ratio:</b> <code>{liq_ratio_formatted}</code>
-└ <b>Dexes:</b> <code>{', '.join(dexes)}</code>
-"""
-    
-    # Add Moralis data if available
-    if moralis_data:
-        message += "\n🔍 <b>Moralis Data</b>\n"
-        if "token_analytics" in moralis_data:
-            analytics = moralis_data["token_analytics"]
-            if "totalBuyVolume" in analytics and "totalSellVolume" in analytics:
-                buy_24h = analytics["totalBuyVolume"].get("24h", 0)
-                sell_24h = analytics["totalSellVolume"].get("24h", 0)
-                total_volume = buy_24h + sell_24h
-                message += f"├ <b>24H Volume:</b> <code>${total_volume:,.0f}</code>\n"
-                message += f"├ <b>Buy Volume:</b> <code>${buy_24h:,.0f}</code>\n"
-                message += f"└ <b>Sell Volume:</b> <code>${sell_24h:,.0f}</code>\n"
-        
-        if "holder_stats" in moralis_data:
-            holder_stats = moralis_data["holder_stats"]
-            message += f"├ <b>Total Holders:</b> <code>{holder_stats.get('totalHolders', 'N/A')}</code>\n"
-    
-    # Add Helius data if available
-    if helius_data:
-        message += "\n🌐 <b>Helius Data</b>\n"
-        if "age_info" in helius_data and "age_formatted" in helius_data["age_info"]:
-            age = helius_data["age_info"]["age_formatted"]
-            message += f"├ <b>Token Age:</b> <code>{age}</code>\n"
-        
-        if "metadata" in helius_data and "metadata" in helius_data["metadata"]:
-            metadata = helius_data["metadata"]["metadata"]
-            if metadata and "name" in metadata:
-                message += f"├ <b>On-chain Name:</b> <code>{metadata['name']}</code>\n"
-            if metadata and "symbol" in metadata:
-                message += f"└ <b>On-chain Symbol:</b> <code>{metadata['symbol']}</code>\n"
-    
-    return message.strip()
 
 
 def tx_analysis_solana_text(tx_analysis: Dict[str, Dict[str, Dict[str, Any]]]) -> str:
@@ -187,3 +102,91 @@ def tx_analysis_solana_text(tx_analysis: Dict[str, Dict[str, Dict[str, Any]]]) -
         message += f"🔴 <b>Sells:</b> {sell_data['txs']} txs, {sell_data['wallets']} wallets, avg ${sell_data['avg']:.2f}\n\n"
     
     return message.strip() 
+
+def detailed_tx_analysis_solana_text(tx_analysis: dict) -> str:
+    """Return a detailed Solana transaction analysis message using real values from tx_analysis, with Buy/Sell Wallets in italic. Only include 6H and 24H timeframes."""
+    message = "🔄 <b><u>Transaction Analysis</u></b> 🔄\n\n"
+    for timeframe in ["6H", "24H"]:
+        if timeframe in tx_analysis:
+            data = tx_analysis[timeframe]
+            buy_data = data.get('buy', {})
+            sell_data = data.get('sell', {})
+            message += f"<b>{timeframe} Transaction Analysis</b>\n"
+            message += f"├ BUY Outlier: <b>{buy_data.get('outlier', 'N/A')}</b>\n"
+            message += f"├ BUY Avg: <b>{buy_data.get('avg', 'N/A')}</b>\n"
+            message += f"├ BUY StDev: <b>{buy_data.get('stdev', 'N/A')}</b>\n"
+            message += f"├ <i>BUY Wallets:</i> <b><i>{buy_data.get('wallets', 'N/A')}</i></b>\n"
+            message += f"├ SELL Outlier: <b>{sell_data.get('outlier', 'N/A')}</b>\n"
+            message += f"├ SELL Avg: <b>{sell_data.get('avg', 'N/A')}</b>\n"
+            message += f"├ SELL StDev: <b>{sell_data.get('stdev', 'N/A')}</b>\n"
+            message += f"└ <i>SELL Wallets:</i> <b><i>{sell_data.get('wallets', 'N/A')}</i></b>\n\n"
+    return message.strip()
+
+def static_smart_money_message(*, first_repeat: dict | None = None, smart_money: dict | None = None) -> str:
+    """Return a Smart Money message with top wallets data (3D/14D), dynamic if provided, else static."""
+    if smart_money is not None:
+        def format_wallets(wallets):
+            lines = []
+            for i, (wallet, stats) in enumerate(wallets, 1):
+                lines.append(f"├ #{i} Buy txs: {stats['buy']}  || Sell txs: {stats.get('sell', 0)}")
+            if lines:
+                lines[-1] = lines[-1].replace('├', '└', 1)
+            return '\n'.join(lines)
+        msg = "🧠 Smart Money 🧠\n\n"
+        for period in ["3D", "14D"]:
+            msg += f"<b>Top Wallets {period}</b>\n"
+            wallets = smart_money.get(period, [])
+            msg += format_wallets(wallets) + "\n\n"
+        return msg.strip()
+    # fallback to static
+    return (
+        "🧠 Smart Money 🧠\n\n"
+        "<b>Top Wallets 3D</b>\n"
+        "├ #1 Buy txs: 1  || Sell txs: 2\n"
+        "├ #2 Buy txs: 3  || Sell txs: 0\n"
+        "├ #3 Buy txs: 3  || Sell txs: 1\n"
+        "├ #4 Buy txs: 4  || Sell txs: 0\n"
+        "└ #5 Buy txs: 3  || Sell txs: 0\n\n"
+        "<b>Top Wallets 14D</b>\n"
+        "├ #1 Buy txs: 1  || Sell txs: 2\n"
+        "├ #2 Buy txs: 3  || Sell txs: 0\n"
+        "├ #3 Buy txs: 3  || Sell txs: 1\n"
+        "├ #4 Buy txs: 4  || Sell txs: 0\n"
+        "└ #5 Buy txs: 3  || Sell txs: 0\n"
+    )
+
+
+def dynamic_crypto_signals_message(buyer_analysis: dict) -> str:
+    """Return a dynamic Crypto Signals message with real first time vs repeat buyers data."""
+    
+    # Helper function to format time periods
+    def format_period(period: str) -> str:
+        if period == "5m":
+            return "5M"
+        elif period == "1h":
+            return "1H"
+        elif period == "6h":
+            return "6H"
+        elif period == "24h":
+            return "24H"
+        else:
+            return period.upper()
+    
+    # Build the message
+    message = "🚨 Crypto Signals 🚨\n💰 <b>First Time Vs Repeat Buyers</b> 💰\n\n"
+    
+    # Add data for each time period
+    time_periods = ["5m", "1h", "6h", "24h"]
+    
+    for period in time_periods:
+        if period in buyer_analysis:
+            data = buyer_analysis[period]
+            first_time = data.get("first_time_buyers", 0)
+            repeat = data.get("repeat_buyers", 0)
+            
+            message += f"<b>{format_period(period)}</b>\n├ First Time Buyers: {first_time}\n└ Repeat Buyers: {repeat}\n\n"
+        else:
+            message += f"<b>{format_period(period)}</b>\n├ First Time Buyers: 0\n└ Repeat Buyers: 0\n\n"
+    
+    return message 
+

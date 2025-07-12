@@ -1,0 +1,29 @@
+{
+  "address": "8X2JsdyRXVBD8RC4GJstTaUgaFTKi2ZHTMrccwidpump",
+  "pool_address": "5LBZGhHw5c9GEqFPnEWwaFvekSmL2CKtEXBzQTvUjjVC",
+  "name": "grog",
+  "symbol": "grog",
+  "timestamp_alerted": 1752360303,
+  "top_holders": [
+    {
+      "address": "5LBZGhHw5c9GEqFPnEWwaFvekSmL2CKtEXBzQTvUjjVC",
+      "balance": 133997612.025079
+    },
+    {
+      "address": "4Ro9dzsLEaZJprjhxxbg1xoV81SSsYrop2RY4wwQ7VtJ",
+      "balance": 25783919.239891
+    },
+    {
+      "address": "CiYCjxdH5xbcsiJ7WN8Ws55QJE5Cf1FYu3nEpjsF1T3u",
+      "balance": 15653025.778104
+    },
+    {
+      "address": "BiPpsJnfomMH55mFsvdDF1DhxAFXz4CUG1eULyvSsdpW",
+      "balance": 15534226.428029
+    },
+    {
+      "address": "3y7r7m9RMYBxpx3MqNM2jzuMu9sAD2kkrQ1RzxVuu4hp",
+      "balance": 15509870.24732
+    }
+  ]
+}

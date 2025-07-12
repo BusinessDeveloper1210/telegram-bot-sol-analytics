@@ -1,0 +1,29 @@
+{
+  "address": "3hifQKYH6RqkAjBpYeggem1cwu9PG4ToH2eVeML5pump",
+  "pool_address": "9Lbc7rEx6NqM59rjhXWgZypybGBPivvW8ig8GwW1jw7L",
+  "name": "PUMPNOTFUN",
+  "symbol": "NOTFUN",
+  "timestamp_alerted": 1752359966,
+  "top_holders": [
+    {
+      "address": "9Lbc7rEx6NqM59rjhXWgZypybGBPivvW8ig8GwW1jw7L",
+      "balance": 95045111.068995
+    },
+    {
+      "address": "28yP4j4vrVTQMb9v4tPR2FTQGgWdJyLmv8jaVyLbN8u2",
+      "balance": 22222736.552951
+    },
+    {
+      "address": "fd2rckL4SmhbXuUwkqM1j5zGJpr38CZUC3bTg525QYM",
+      "balance": 18891768.281199
+    },
+    {
+      "address": "9XDGse2NNnCUtYzrf2Z4yYX8MENLb6iTTe8X7iQezMfu",
+      "balance": 17031673.114992
+    },
+    {
+      "address": "CH5pQNBkkX661sxu2zBJvSYe6dnJs7LbqRWWrNPGhCg",
+      "balance": 16487286.159099
+    }
+  ]
+}

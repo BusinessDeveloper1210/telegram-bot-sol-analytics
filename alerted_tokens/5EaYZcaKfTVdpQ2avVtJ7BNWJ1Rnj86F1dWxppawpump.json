@@ -1,0 +1,29 @@
+{
+  "address": "5EaYZcaKfTVdpQ2avVtJ7BNWJ1Rnj86F1dWxppawpump",
+  "pool_address": "2H87WiHP7gMcBGodhRtzgmVc3MYqEx1xPcGdoVUHNQhj",
+  "name": "DOLLO ALL IN",
+  "symbol": "dollo",
+  "timestamp_alerted": 1752274516,
+  "top_holders": [
+    {
+      "address": "2H87WiHP7gMcBGodhRtzgmVc3MYqEx1xPcGdoVUHNQhj",
+      "balance": 113965444.321174
+    },
+    {
+      "address": "9GTVJLduxXwUR6otWSYgDLatYJCab61wHB8Vcoi2FNEf",
+      "balance": 26511661.013366
+    },
+    {
+      "address": "AeAr5MR5hRrWrHTSsyx6ztEL83r9oRHRRrh1e6d2fXUa",
+      "balance": 24175893.281474
+    },
+    {
+      "address": "4hSXPtxZgXFpo6Vxq9yqxNjcBoqWN3VoaPJWonUtupzD",
+      "balance": 20991373.147304
+    },
+    {
+      "address": "6hHfDSagPQv4ouhr7x17jp9tQNfqUhdJWFHY5mEHnLp2",
+      "balance": 20458672.052344
+    }
+  ]
+}

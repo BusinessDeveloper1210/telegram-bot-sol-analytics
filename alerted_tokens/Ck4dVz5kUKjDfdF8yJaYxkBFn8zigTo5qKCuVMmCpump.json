@@ -1,0 +1,29 @@
+{
+  "address": "Ck4dVz5kUKjDfdF8yJaYxkBFn8zigTo5qKCuVMmCpump",
+  "pool_address": "7eaB2NEX2NxMqmxoqHHgpLBYjY2Q5f4RaaSiq1Usgwd8",
+  "name": "soyboy",
+  "symbol": "soyboy",
+  "timestamp_alerted": 1752330004,
+  "top_holders": [
+    {
+      "address": "7eaB2NEX2NxMqmxoqHHgpLBYjY2Q5f4RaaSiq1Usgwd8",
+      "balance": 142037841.950996
+    },
+    {
+      "address": "SNzVPVVzZJmdQz4FxYMVTis2nBejXXV5wp58FfPyUcV",
+      "balance": 33282402.19894
+    },
+    {
+      "address": "3cXQpEQR7wrPerm7cJkFJNJa8ZczLefX911Qc4cZB16a",
+      "balance": 28922120.882853
+    },
+    {
+      "address": "34ZEH778zL8ctkLwxxERLX5ZnUu6MuFyX9CWrs8kucMw",
+      "balance": 27959294.23109
+    },
+    {
+      "address": "8btBrWzkoxoqTMwyXULndb55HVD7vsKf4H43UrJHDz4i",
+      "balance": 27923223.217254
+    }
+  ]
+}

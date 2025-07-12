@@ -1,0 +1,29 @@
+{
+  "address": "MckEYDP6awfFru1oBLmpdTsTKHbTEicQsDKrPc8pump",
+  "pool_address": "Do4VjPb1KSVmRh9TUjRXg9xmnAYLcDrrHmJCsvrVkCLi",
+  "name": "u sell u gay",
+  "symbol": "USUG",
+  "timestamp_alerted": 1752275516,
+  "top_holders": [
+    {
+      "address": "Do4VjPb1KSVmRh9TUjRXg9xmnAYLcDrrHmJCsvrVkCLi",
+      "balance": 190316379.307869
+    },
+    {
+      "address": "7A9iEJLb1Pq8xMG7MUhhaVZ6e51vQqvPM3RWd91ASect",
+      "balance": 34478929.055266
+    },
+    {
+      "address": "87b4u2yhYZyR1AD5AUQgdPgA9UFRKqsUQ7iVojiCAW2h",
+      "balance": 30724875.857272
+    },
+    {
+      "address": "HaQC1FVqEMziVorUFJwq2q1xnZ3JuKduYTEo5qrU2W2t",
+      "balance": 29604321.972676
+    },
+    {
+      "address": "8mxaxNFzzeTSWi4ipHzWiqZ5kHGTjjUggj5Xg6az72kD",
+      "balance": 28388035.694581
+    }
+  ]
+}

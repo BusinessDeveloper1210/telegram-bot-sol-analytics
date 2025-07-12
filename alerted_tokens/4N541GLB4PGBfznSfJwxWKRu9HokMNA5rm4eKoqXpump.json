@@ -1,0 +1,29 @@
+{
+  "address": "4N541GLB4PGBfznSfJwxWKRu9HokMNA5rm4eKoqXpump",
+  "pool_address": "CebXREVWLBfXkKkd8QMwbiL9dVz7HTvCCUr9fb9uBHj6",
+  "name": "Dump.fun",
+  "symbol": "$Dump",
+  "timestamp_alerted": 1752330004,
+  "top_holders": [
+    {
+      "address": "CebXREVWLBfXkKkd8QMwbiL9dVz7HTvCCUr9fb9uBHj6",
+      "balance": 197828572.091067
+    },
+    {
+      "address": "C5X7B4X5LqEyVVPoAi4wjRpQbJWcNHaUjgK7XBp4te11",
+      "balance": 50114919.35348
+    },
+    {
+      "address": "394hFDe8t1Une2NQy6M8oNCad5YhzRPkNgJAARBLmmFa",
+      "balance": 35369449.39761
+    },
+    {
+      "address": "9QNAMNbYYufk5ew2jnbNzfbkC1DaiDT9PnDsEWkidHGg",
+      "balance": 33385367.244995
+    },
+    {
+      "address": "5xDrP2Kw42mXGRBudYk5QXp7ow74n2GZm627m5zyi4J3",
+      "balance": 30359351.45443
+    }
+  ]
+}

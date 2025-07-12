@@ -1,0 +1,29 @@
+{
+  "address": "DLehJ1mGvhq3GCwr3zZMzPxNwutK7bY1DsW9xPbpump",
+  "pool_address": "5MKAGKJJT4ammTdvye45HeK2iu3TrvK9QLvv5sbboSph",
+  "name": "You're Out",
+  "symbol": "POWELL",
+  "timestamp_alerted": 1752274516,
+  "top_holders": [
+    {
+      "address": "5MKAGKJJT4ammTdvye45HeK2iu3TrvK9QLvv5sbboSph",
+      "balance": 99995904.269395
+    },
+    {
+      "address": "2jX4CTykkUV11jBBp6PNho1FQWWkiorvVxBvM95QKahL",
+      "balance": 20677133.747336
+    },
+    {
+      "address": "izmbpZ6UtXakuqz3aPU2Lkck9zJg29hsdgyXwbvTkDw",
+      "balance": 11472000.0
+    },
+    {
+      "address": "4GDy6FRChbwUyrZcmRcLZ5Nen6vcASbRjXzqApWF2mFX",
+      "balance": 11227343.786273
+    },
+    {
+      "address": "71xb5LAfYSxKzTT6vxSuuznW1zyeBaHQv4b88tVLfLaz",
+      "balance": 10334390.908874
+    }
+  ]
+}

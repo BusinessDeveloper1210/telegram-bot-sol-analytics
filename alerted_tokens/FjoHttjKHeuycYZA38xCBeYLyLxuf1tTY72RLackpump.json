@@ -1,0 +1,29 @@
+{
+  "address": "FjoHttjKHeuycYZA38xCBeYLyLxuf1tTY72RLackpump",
+  "pool_address": "4fRbFxgZTFNiqRoS6D989NT5TmGCNwew3q34ZbwWPRnh",
+  "name": "babypumpfun",
+  "symbol": "BABYPUMP",
+  "timestamp_alerted": 1752261807,
+  "top_holders": [
+    {
+      "address": "4fRbFxgZTFNiqRoS6D989NT5TmGCNwew3q34ZbwWPRnh",
+      "balance": 151880270.151525
+    },
+    {
+      "address": "7rFVsTkfUF3AUhuqhsePUrNz8qZcrM2LSj1uLB3dxPvk",
+      "balance": 17128747.650065
+    },
+    {
+      "address": "FfjsucoUQLUuh7jVBtK4T8HszDGbsvGATHu6DTpAQQfn",
+      "balance": 17074353.881206
+    },
+    {
+      "address": "4TLPQD3a4qRgaBnce4RtqKKWmjAZiXXYs9mZVxXZdRun",
+      "balance": 16758483.977337
+    },
+    {
+      "address": "BdEScwuZti3eNLNqq1B2wzy3kyDwpAbEDCNGTzzRRvGL",
+      "balance": 16316785.596452
+    }
+  ]
+}

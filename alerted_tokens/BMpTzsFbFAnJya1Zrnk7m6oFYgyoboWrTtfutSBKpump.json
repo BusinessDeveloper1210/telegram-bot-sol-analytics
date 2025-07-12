@@ -1,0 +1,29 @@
+{
+  "address": "BMpTzsFbFAnJya1Zrnk7m6oFYgyoboWrTtfutSBKpump",
+  "pool_address": "6utiKLJ9NE9qHS3F2xXPyi1LJCCoaY1JiEsUVd3UjeLN",
+  "name": "DallasCOIN",
+  "symbol": "DCOIN",
+  "timestamp_alerted": 1752331412,
+  "top_holders": [
+    {
+      "address": "6utiKLJ9NE9qHS3F2xXPyi1LJCCoaY1JiEsUVd3UjeLN",
+      "balance": 157362229.616729
+    },
+    {
+      "address": "wXDe4QVMgqWSDo47fwWd72w4KgkPotnPzxHjNra95VJ",
+      "balance": 57809329.249233
+    },
+    {
+      "address": "9koCEDRmhTH6cwSDuaAwUaG1cPe2HsfyX3Lty5qmKsG",
+      "balance": 50459820.183277
+    },
+    {
+      "address": "CUi6Ry3YTzTYDntza19fwb7WSdRSX5pGt2zHkvht2VEX",
+      "balance": 44287201.359287
+    },
+    {
+      "address": "EKLZxC6XwuT8K5DkzxmsvjGuuSCD3hs4tZJC7zY1XsrV",
+      "balance": 35525828.936922
+    }
+  ]
+}

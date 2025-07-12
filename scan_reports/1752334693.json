@@ -1,0 +1,8 @@
+{
+  "PASSED": 1,
+  "MIN_LIQUIDITY": 57,
+  "IGNORABLE": 6,
+  "MCAP_RANGE": 20,
+  "ERROR": 10,
+  "NO_BUY_OUTLIER": 6
+}

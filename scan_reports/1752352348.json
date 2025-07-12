@@ -1,0 +1,6 @@
+{
+  "MIN_LIQUIDITY": 61,
+  "MCAP_RANGE": 31,
+  "ERROR": 3,
+  "NO_BUY_OUTLIER": 5
+}

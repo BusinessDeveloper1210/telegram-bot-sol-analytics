@@ -1,0 +1,29 @@
+{
+  "address": "EPFHsGA28YsTqDFTDHDPVRzjcqP1e3zDBhnBQGtppump",
+  "pool_address": "8cyfinDmnW3AR5ywivziKJu4g45diWp9egkRAAUYh4RQ",
+  "name": "Never Dump Agreement",
+  "symbol": "NDA",
+  "timestamp_alerted": 1752277685,
+  "top_holders": [
+    {
+      "address": "8cyfinDmnW3AR5ywivziKJu4g45diWp9egkRAAUYh4RQ",
+      "balance": 189371905.224223
+    },
+    {
+      "address": "Emh9sU5F19SjPePsBFayVh3gDF3433QchiVgxmEh67vc",
+      "balance": 31775662.594396
+    },
+    {
+      "address": "EWJuYRkYc5rPRFoRkuuevVRwrkXBQgEQttwFXqDzG3Hs",
+      "balance": 19996786.298993
+    },
+    {
+      "address": "6ce2TqJYWthujt2qmX83m3i3SDa81SGfSyfz7wz8sE4E",
+      "balance": 16152777.080009
+    },
+    {
+      "address": "2sgZhwG7jVPLyqsTb2TUYbfzH3eePBCUHDZmRr6FMMzd",
+      "balance": 16012130.394098
+    }
+  ]
+}

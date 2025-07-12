@@ -1,0 +1,29 @@
+{
+  "address": "FGftaHdkbPYoRTPmjd6FQoTwYCxdXrgxezLdtixCpump",
+  "pool_address": "EtJ9xa8M6i6WYvAXBoFd2fpiVXNefdUB42prNkofFMPs",
+  "name": "ITS BITCOIN BABE",
+  "symbol": "BTCH",
+  "timestamp_alerted": 1752282182,
+  "top_holders": [
+    {
+      "address": "EtJ9xa8M6i6WYvAXBoFd2fpiVXNefdUB42prNkofFMPs",
+      "balance": 118587901.504211
+    },
+    {
+      "address": "6thskTFdNtMKh7HEMdf57Ds3EvQxuYsyrStFubDf4kBA",
+      "balance": 19047198.523939
+    },
+    {
+      "address": "VJETpARb95tuxshJztPt4mPpwqPUtp4Ucf7eSNKFpH4",
+      "balance": 18857838.12644
+    },
+    {
+      "address": "E9AxdmTRKPpSR8Ka5o5UzxMsWFqvpkFj4W5Xt3Ke47Go",
+      "balance": 18749642.158043
+    },
+    {
+      "address": "PX3KN59S1ghNnmSX8cat9smZqdsCSqXPMSXyvn44He2",
+      "balance": 18648342.942775
+    }
+  ]
+}

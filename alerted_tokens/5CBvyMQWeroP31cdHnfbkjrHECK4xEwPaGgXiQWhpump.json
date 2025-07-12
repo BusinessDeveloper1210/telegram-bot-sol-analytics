@@ -1,0 +1,29 @@
+{
+  "address": "5CBvyMQWeroP31cdHnfbkjrHECK4xEwPaGgXiQWhpump",
+  "pool_address": "2KQUni2k7yUQgmTbUFmd7BpTF4d9hpq7KKoVJEyM7pWX",
+  "name": "Going Parabolic ",
+  "symbol": "Parabolic",
+  "timestamp_alerted": 1752335173,
+  "top_holders": [
+    {
+      "address": "2KQUni2k7yUQgmTbUFmd7BpTF4d9hpq7KKoVJEyM7pWX",
+      "balance": 174408020.155403
+    },
+    {
+      "address": "EaBsGoVwBeWFXU59RcXuWJHrZvaucPZwbR4Nwpk8tirN",
+      "balance": 29730246.853054
+    },
+    {
+      "address": "B38jyEWHw1wdTPBL88eeiZW816un9cVa6xVoLKCQwLSa",
+      "balance": 24694443.233811
+    },
+    {
+      "address": "9dDWjjvDgC8BQSajNCG1wBuhwSzfXZnRYZpqRXZGJB7Y",
+      "balance": 21632830.769864
+    },
+    {
+      "address": "4unNyjyfbZVigcVf1Qeq5TJXW2tvbtf9cMirPxSccrrT",
+      "balance": 21506181.618809
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "address": "4avLyx8E2NZQDGENgeKQYTwCiNQFUZh5LYVycm31pump",
+  "pool_address": "5Nd6hnCE6AcDV9nrPUsTfi5m1cfURqR7WDso6NADryn1",
+  "name": "pumpcycle",
+  "symbol": "pumpcycle",
+  "timestamp_alerted": 1752331412,
+  "top_holders": [
+    {
+      "address": "5Nd6hnCE6AcDV9nrPUsTfi5m1cfURqR7WDso6NADryn1",
+      "balance": 155093772.982747
+    },
+    {
+      "address": "AoG7J2jydRxZyEbTBz2TphhXdxXekX8JDXxf7a6gnfaY",
+      "balance": 18799755.709415
+    },
+    {
+      "address": "BzaxsUXbkqjEJe8JZXjgr4UEnQeLoaWXSA9LjTPNxfZ8",
+      "balance": 18477820.332451
+    },
+    {
+      "address": "7GqvcZEXwN3TTKCurs6FrBNx54P5Khiw1EKNkFsFzoGZ",
+      "balance": 16338169.919591
+    },
+    {
+      "address": "B4bunoLzXcCJXCJy8yzu2YfaEwTVJaungTQZaAhRWQwK",
+      "balance": 15769487.195297
+    }
+  ]
+}

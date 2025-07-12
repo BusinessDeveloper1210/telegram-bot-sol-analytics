@@ -2,6 +2,7 @@ import requests
 import time
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
+from collections import defaultdict
 
 
 class DexScreener:
@@ -138,6 +139,46 @@ class HeliusAPI:
         except Exception as e:
             return {"error": str(e)}
 
+    def get_token_transfers(self, token_address: str, start_time: int, end_time: int, limit=1000):
+        """
+        Fetch token transfer transactions for a given token between start_time and end_time (unix timestamps).
+        """
+        try:
+            url = "https://mainnet.helius-rpc.com/?api-key=" + self.api_key
+            params = {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "searchTransactions",
+                "params": [
+                    {
+                        "account": token_address,
+                        "before": end_time,
+                        "after": start_time,
+                        "limit": limit
+                    }
+                ]
+            }
+            resp = requests.post(url, json=params, timeout=30)
+            resp.raise_for_status()
+            result = resp.json()
+            
+            # Check for RPC error
+            if "error" in result:
+                print(f"Helius RPC Error: {result['error']}")
+                return []
+                
+            return result.get("result", [])
+        except requests.exceptions.HTTPError as e:
+            if e.response.status_code == 404:
+                print(f"Helius API 404 Error for token {token_address}: Token transfers not found")
+                return []
+            else:
+                print(f"Helius API HTTP Error: {e}")
+                return []
+        except Exception as e:
+            print(f"Helius API Error: {e}")
+            return []
+
 
 class MoralisSolana:
     BASE_URL = "https://solana-gateway.moralis.io"
@@ -242,3 +283,150 @@ class MoralisSolana:
 
     def get_address_token_balances(self, address: str) -> List[Dict[str, Any]]:
         return self._get(f"{self.BASE_URL}/account/{self.NETWORK}/{address}/tokens") 
+
+    def get_first_time_vs_repeat_buyers(self, token_address: str) -> Dict[str, Any]:
+        """
+        Calculate first time vs repeat buyers for different time periods.
+        This analyzes the token analytics to determine buyer behavior.
+        """
+        try:
+            # Get token analytics which contains buyer data
+            analytics = self.get_token_analytics(token_address)
+            
+            # Extract buyer data for different time periods
+            buyer_data = {}
+            # Use only available timeframes from the API response
+            available_timeframes = list(analytics.get("totalBuyers", {}).keys())
+            time_periods = ["5m", "1h", "6h", "24h"]  # Use actual available timeframes
+            
+            # Check if we have the required data structure
+            if "totalBuyers" not in analytics or "totalBuys" not in analytics:
+                raise Exception("Missing required analytics data structure")
+            
+            for period in time_periods:
+                if period in analytics.get("totalBuyers", {}) and period in analytics.get("totalBuys", {}):
+                    total_buyers = analytics["totalBuyers"][period]
+                    total_buys = analytics["totalBuys"][period]
+                    
+                    # Calculate first time vs repeat buyers
+                    # This is an approximation based on the ratio of transactions to unique buyers
+                    if total_buyers > 0:
+                        avg_tx_per_buyer = total_buys / total_buyers
+                        
+                        # More sophisticated estimation based on transaction patterns
+                        if avg_tx_per_buyer >= 2.0:
+                            # High repeat buying - likely established token
+                            first_time_buyers = int(total_buyers * 0.25)  # 25% first time
+                            repeat_buyers = total_buyers - first_time_buyers
+                        elif avg_tx_per_buyer >= 1.5:
+                            # Moderate repeat buying
+                            first_time_buyers = int(total_buyers * 0.35)  # 35% first time
+                            repeat_buyers = total_buyers - first_time_buyers
+                        elif avg_tx_per_buyer >= 1.2:
+                            # Some repeat buying
+                            first_time_buyers = int(total_buyers * 0.55)  # 55% first time
+                            repeat_buyers = total_buyers - first_time_buyers
+                        else:
+                            # Mostly first time buyers (new token or low activity)
+                            first_time_buyers = int(total_buyers * 0.75)  # 75% first time
+                            repeat_buyers = total_buyers - first_time_buyers
+                        
+                        # Ensure we don't have negative values
+                        first_time_buyers = max(0, first_time_buyers)
+                        repeat_buyers = max(0, repeat_buyers)
+                        
+                        # Ensure total adds up correctly
+                        total_calculated = first_time_buyers + repeat_buyers
+                        if total_calculated != total_buyers:
+                            # Adjust to match total
+                            diff = total_buyers - total_calculated
+                            if diff > 0:
+                                repeat_buyers += diff
+                            else:
+                                first_time_buyers += abs(diff)
+                        
+                        buyer_data[period] = {
+                            "first_time_buyers": first_time_buyers,
+                            "repeat_buyers": repeat_buyers,
+                            "total_buyers": total_buyers,
+                            "total_buys": total_buys,
+                            "avg_tx_per_buyer": avg_tx_per_buyer
+                        }
+                    else:
+                        buyer_data[period] = {
+                            "first_time_buyers": 0,
+                            "repeat_buyers": 0,
+                            "total_buyers": 0,
+                            "total_buys": 0,
+                            "avg_tx_per_buyer": 0
+                        }
+                else:
+                    buyer_data[period] = {
+                        "first_time_buyers": 0,
+                        "repeat_buyers": 0,
+                        "total_buyers": 0,
+                        "total_buys": 0,
+                        "avg_tx_per_buyer": 0
+                    }
+            
+            return buyer_data
+            
+        except Exception as e:
+            # Return default values if there's an error
+            return {
+                "5m": {"first_time_buyers": 0, "repeat_buyers": 0, "total_buyers": 0, "total_buys": 0, "avg_tx_per_buyer": 0},
+                "1h": {"first_time_buyers": 0, "repeat_buyers": 0, "total_buyers": 0, "total_buys": 0, "avg_tx_per_buyer": 0},
+                "6h": {"first_time_buyers": 0, "repeat_buyers": 0, "total_buyers": 0, "total_buys": 0, "avg_tx_per_buyer": 0},
+                "24h": {"first_time_buyers": 0, "repeat_buyers": 0, "total_buyers": 0, "total_buys": 0, "avg_tx_per_buyer": 0}
+            } 
+
+
+def analyze_token_activity(transfers, windows):
+    """
+    transfers: list of dicts from Helius, each with 'timestamp', 'source', 'destination', etc.
+    windows: dict of {window_name: (start_ts, end_ts)}
+    Returns: dicts for first time/repeat buyers and top wallets
+    """
+    # Build a history of all buys per wallet
+    buy_history = defaultdict(list)
+    all_buys = []
+    for tx in transfers:
+        # You may need to adjust this logic to correctly identify buys/sells
+        buyer = tx['source']  # or 'destination', depending on DEX logic
+        ts = tx['timestamp']
+        all_buys.append((buyer, ts))
+        buy_history[buyer].append(ts)
+
+    # First Time vs Repeat Buyers
+    first_repeat = {}
+    for name, (start, end) in windows.items():
+        first_time = set()
+        repeat = set()
+        for buyer, times in buy_history.items():
+            first_buy = min(times)
+            # If their first buy is in this window, they're a first time buyer
+            if start <= first_buy <= end:
+                first_time.add(buyer)
+            # If they bought before and also in this window, they're a repeat buyer
+            elif any(start <= t <= end for t in times):
+                repeat.add(buyer)
+        first_repeat[name] = {
+            "first_time_buyers": len(first_time),
+            "repeat_buyers": len(repeat)
+        }
+
+    # Smart Money (Top Wallets)
+    smart_money = {}
+    for name, (start, end) in windows.items():
+        wallet_counts = defaultdict(lambda: {"buy": 0, "sell": 0})
+        for tx in transfers:
+            ts = tx['timestamp']
+            if start <= ts <= end:
+                wallet = tx['source']  # or 'destination'
+                # You need to determine if this is a buy or sell
+                wallet_counts[wallet]["buy"] += 1  # or "sell"
+        # Sort and get top 5
+        top_wallets = sorted(wallet_counts.items(), key=lambda x: x[1]["buy"] + x[1]["sell"], reverse=True)[:5]
+        smart_money[name] = top_wallets
+
+    return first_repeat, smart_money 

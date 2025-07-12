@@ -1,0 +1,29 @@
+{
+  "address": "7iLhRE3oeTNgBTqxa3zd7GZy5ofqnaVX1FiQcyAcpump",
+  "pool_address": "Cd7LU3QbXbjQE3hxS7zGGY54qo1LqrF6MobKnxCBUEQ3",
+  "name": "PumpFun Index Fund 6900 ",
+  "symbol": "PFI6900",
+  "timestamp_alerted": 1752330357,
+  "top_holders": [
+    {
+      "address": "Cd7LU3QbXbjQE3hxS7zGGY54qo1LqrF6MobKnxCBUEQ3",
+      "balance": 183303959.487763
+    },
+    {
+      "address": "J9mnzdvz2yd3gPMq5pwNtcYPchHpKJaafEaAcksVc9Kf",
+      "balance": 28804515.11529
+    },
+    {
+      "address": "GmtvCtjgcb8LBvncmQU825dhBoavTMZ2ReQSqxFkVu8A",
+      "balance": 24114081.219225
+    },
+    {
+      "address": "ARTNaaTdDMpTcXaCmtvh1MoTJyaM6ix42p5GmEZigX1y",
+      "balance": 22944328.252637
+    },
+    {
+      "address": "TH4fLXqz18pb1WHqrWQjTBCAvkt4B7TAFwX9oAuFYQs",
+      "balance": 20000000.00233
+    }
+  ]
+}
